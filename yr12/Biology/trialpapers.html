@@ -26,25 +26,26 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </tr>
 <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
 <td id="sites-chrome-header-horizontal-nav-container" role="navigation" colspan="2">
-<div class="sites-header-nav"><!--[if lt IE 9]><div style="display:none;"> <![endif]--> <ul class="sites-header-nav-container-boxes">
-<li class="unselected lev"><a class="sites-navigation-link unselected" href="https://thsconline.github.io/s/">THSC Home</a></li>
-<li class="unselected"><a class="sites-navigation-link unselected" href="https://thsconline.github.io/s/yr10/">Year 10</a></li>
-<li class="unselected"><a class="sites-navigation-link unselected" href="https://thsconline.github.io/s/yr11/">Year 11 - Preliminary</a></li>
-<li class="current"><a class="sites-navigation-link current" href="https://thsconline.github.io/s/yr12/">Year 12 - HSC</a></li>
-<li class="unselected"><a class="sites-navigation-link unselected" href="https://thsconline.github.io/s/upload/">Upload Files</a></li>
+<div class="sites-header-nav"><!--[if lt IE 9]><div style="display:none;"> <![endif]--><ul class="sites-header-nav-container-boxes">
+<li class="unselected"><a class="sites-navigation-link unselected" href="/s/">THSC Home</a></li>
+<li class="unselected"><a class="sites-navigation-link unselected" href="/s/yr10/">Year 10</a></li>
+<li class="unselected"><a class="sites-navigation-link unselected" href="/s/yr11/">Year 11 - Preliminary</a></li>
+<li class="current"><a class="sites-navigation-link current" href="/s/yr12/">Year 12 - HSC</a></li>
+<li class="unselected reducible"><a class="sites-navigation-link unselected" href="/s/upload/">Upload Files</a></li>
+<li class="unselected"><a class="sites-navigation-link unselected" href="http://community.boredofstudies.org">Forum</a></li>
 </ul><!--[if lt IE 9]></div>
 <style>.sites-header-nav {border:none !important;} </style>
 <div style="padding-left:15px;" class="folder-path-container goog-container" id="navie">
-<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="https://thsconline.github.io/s/">THSC Home</a></span>
-<span style="float:left;" class="separate lev"></span>
-<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="https://thsconline.github.io/s/yr10/">Year 10</a></span>
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="/s/">THSC Home</a></span>
 <span style="float:left;" class="separate"></span>
-<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="https://thsconline.github.io/s/yr11/">Year 11 - Preliminary</a></span>
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="/s/yr10/">Year 10</a></span>
 <span style="float:left;" class="separate"></span>
-<span style="float:left;" class="folder-path-folder folder-current-element"><a class="nofill" href="https://thsconline.github.io/s/yr12/">Year 12 - HSC</a></span>
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="/s/yr11/">Year 11 - Preliminary</a></span>
+<span style="float:left;" class="separate"></span>
+<span style="float:left;" class="folder-path-folder folder-current-element"><a class="nofill" href="/s/yr12/">Year 12 - HSC</a></span>
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="http://community.boredofstudies.org">Forum</a></span>
 </div><br><br>
-<![endif]-->
-<div style="padding-left:15px;" class="folder-path-container goog-container">
+<![endif]--><div style="padding-left:15px;" class="folder-path-container goog-container">
 <span style="float:left;" class="folder-path-folder folder-path-element">
 <a class="nofill" href="https://thsconline.github.io/s/">thsconline</a></span>
 <span style="float:left;" class="folder-path-separator-icon"></span>
@@ -81,6 +82,16 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 <a href="index.html">Up One Folder</a></span><br>
 <br>
 </div>
+<div id="web-list1" style="float:clear;">
+<div id="web-list">
+<div class="table" style="display:inline-block;"><div class="tr"><div class="td">
+<div class="folder-path-container goog-container">
+<div class="goog-inline-block folder-path-folder folder-path-element"><a class="nofill" href="#ui-blank" onclick="document.getElementById('web-list1').style.display='none'; document.getElementById('web-list2').style.display='inline';">Sort by Year</a></div>
+</div>
+<div class="smallscreen" style="display:none;">
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_link.png">&nbsp;&nbsp;
+<a class="xn" href="#ui-blank" onclick="document.getElementById('web-list1').style.display='none'; document.getElementById('web-list2').style.display='inline';">Sort by Year</a></span><br>
+</div></div></div></div></div>
 <table style="width:100%"><tbody>
 <tr class="source" id="Baulkham Hills"><td>
 <span class="title"><img src="https://thsconline.github.io/s/images/icon_folder.png">&nbsp;&nbsp;<b>Baulkham Hills</b></span><br>
@@ -156,6 +167,82 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </span></td></tr>
 </tbody></table>
 </div>
+<div id="web-list2" style="float:clear; display:none;">
+<div id="web-list">
+<div class="table" style="display:inline-block;"><div class="tr"><div class="td">
+<div class="folder-path-container goog-container">
+<div class="goog-inline-block folder-path-folder folder-path-element"><a class="nofill" href="#ui-blank" onclick="document.getElementById('web-list2').style.display='none'; document.getElementById('web-list1').style.display='inline'">Sort by Source</a></div>
+</div>
+<div class="smallscreen" style="display:none;">
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_link.png">&nbsp;&nbsp;
+<a class="xn" href="#ui-blank" onclick="document.getElementById('web-list2').style.display='none'; document.getElementById('web-list1').style.display='inline';">Sort by Source</a></span><br>
+</div></div></div></div></div>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKLTc5MnBPa2dkOTQ" id="0ByEFYhkkDQBKLTc5MnBPa2dkOTQ_Y">2001 James Ruse</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKNTN3OG1qUVlFR2s" id="0ByEFYhkkDQBKNTN3OG1qUVlFR2s_Y">2002 Baulkham Hills</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKYVFZb1RUZUlmaDA" id="0ByEFYhkkDQBKYVFZb1RUZUlmaDA_Y">2002 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKM3pIR0xEYUlsZ0E" id="0ByEFYhkkDQBKM3pIR0xEYUlsZ0E_Y">2002 Sydney Boys</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKMkVDM1czRWRYY1E" id="0ByEFYhkkDQBKMkVDM1czRWRYY1E_Y">2002 Sydney Girls</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKM1RIVURTdGx5cWs" id="0ByEFYhkkDQBKM1RIVURTdGx5cWs_Y">2003 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKNUNZNnVwTXU2NU0" id="0ByEFYhkkDQBKNUNZNnVwTXU2NU0_Y">2003 Sydney Girls</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKNmZoT3RuQ0VteWs" id="0ByEFYhkkDQBKNmZoT3RuQ0VteWs_Y">2003 Sydney Grammar w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKV3hWZ05sTVFGUWs" id="0ByEFYhkkDQBKV3hWZ05sTVFGUWs_Y">2004 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKSC1aWXFMbjNlSlk" id="0ByEFYhkkDQBKSC1aWXFMbjNlSlk_Y">2004 SCEGGS 2004 w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKNDJGM1RFMWRTNVU" id="0ByEFYhkkDQBKNDJGM1RFMWRTNVU_Y">2004 Sydney Grammar</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKeHRXYkpDMldTWkk" id="0ByEFYhkkDQBKeHRXYkpDMldTWkk_Y">2005 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKUlB2VzQ2TURpZU0" id="0ByEFYhkkDQBKUlB2VzQ2TURpZU0_Y">2006 James Ruse  w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKQllrdXlxVFVvVDQ" id="0ByEFYhkkDQBKQllrdXlxVFVvVDQ_Y">2006 Sydney Boys</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKOUs2dXg5TnRqREU" id="0ByEFYhkkDQBKOUs2dXg5TnRqREU_Y">2006 Sydney Grammar w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKVzZRVC11X2gwLVU" id="0ByEFYhkkDQBKVzZRVC11X2gwLVU_Y">2006 Sydney Tech</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKWHlONklzd3ZaSE0" id="0ByEFYhkkDQBKWHlONklzd3ZaSE0_Y">2007 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKU1Nlby1xSDJHZjQ" id="0ByEFYhkkDQBKU1Nlby1xSDJHZjQ_Y">2007 Pymble w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKZEJzck9tbWdXY2c" id="0ByEFYhkkDQBKZEJzck9tbWdXY2c_Y">2007 SCEGGS</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKYWptRnNxWE9PV2s" id="0ByEFYhkkDQBKYWptRnNxWE9PV2s_Y">2007 Sydney Girls</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKdEFONGlpU3pVeGc" id="0ByEFYhkkDQBKdEFONGlpU3pVeGc_Y">2008 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKRW5iUFhERHlENVU" id="0ByEFYhkkDQBKRW5iUFhERHlENVU_Y">2008 Shore w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKd1JhSnFoaVNSc1k" id="0ByEFYhkkDQBKd1JhSnFoaVNSc1k_Y">2008 Sydney Boys w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKWlJ6Wjh2emlSajg" id="0ByEFYhkkDQBKWlJ6Wjh2emlSajg_Y">2009 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKRnZfZkM3bXlOR3c" id="0ByEFYhkkDQBKRnZfZkM3bXlOR3c_Y">2009 Sydney Tech</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKVkU4MTJJSUlncDQ" id="0ByEFYhkkDQBKVkU4MTJJSUlncDQ_Y">2010 Baulkham Hills</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKT1Fjb0MyNWNTSEk" id="0ByEFYhkkDQBKT1Fjb0MyNWNTSEk_Y">2010 James Ruse w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKQ1NtSDhtODRQOWM" id="0ByEFYhkkDQBKQ1NtSDhtODRQOWM_Y">2010 Hurlstone w. sol</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKRl9Ja0V0N1NjdG8" id="0ByEFYhkkDQBKRl9Ja0V0N1NjdG8_Y">2011 Hurlstone</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKTnRRMUs4NjhJZnc" id="0ByEFYhkkDQBKTnRRMUs4NjhJZnc_Y">2012 Sydney Tech</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKLWl3cE8yRmFxdVk" id="0ByEFYhkkDQBKLWl3cE8yRmFxdVk_Y">2013 Hurlstone</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="/s/images/icon_pdf2.png">&nbsp;&nbsp;
+<a class="h" onclick="pdf4B(this, '1378'); return false;" href="https://drive.google.com/uc?export=download&amp;id=0ByEFYhkkDQBKWE5odFlwLUh4U3c" id="0ByEFYhkkDQBKWE5odFlwLUh4U3c_Y">2013 Sydney Tech w. sol</a></span><br>
+</div>
+</div>
 </td>
 </tr></tbody></table>
 </div> 
@@ -163,9 +250,8 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </div> 
 </div> 
 </div> 
-<div id="sites-chrome-adminfooter-container">
-<div class="sites-adminfooter" role="navigation" xmlns="http://www.w3.org/1999/xhtml">
-<a href="https://thsconline.github.io/s/sitemap.html">View Sitemap</a><br>
+<div id="sites-chrome-adminfooter-container" style="display:inherit;"><br>
+<div class="sites-adminfooter" role="navigation" xmlns="http://www.w3.org/1999/xhtml"><p><b>Site Version 8.0</b></p>
 <p><span class="sites-system-link">Hosted on <b class="powered-by">Github</b> HTML Template created from <b class="powered-by">Google Sites</b></span></p></div>
 </div>
 </div>
