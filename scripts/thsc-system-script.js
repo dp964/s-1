@@ -97,7 +97,7 @@ return true;
 }}
 try
 {
-window.location="/s/?view="+root+"&id="+idx+"&n="+titlex+"&panel="+panelx""
+window.location="/s/?view="+root+"&id="+idx+"&n="+titlex+"&panel="+panelx+""
 }
 catch (err)
 {
