@@ -86,7 +86,6 @@ var titlex=input.innerHTML;
 var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
 var tix=document.title;
-v
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
 if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
