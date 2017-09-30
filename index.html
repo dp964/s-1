@@ -50,6 +50,7 @@ var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "NE")
 var idx=getParameterByName('id', "NE")
 var idx = idx.replace("_Y", "");
+var rfx=getParameterByName('panel', "NE")	
 var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
 var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
 var fname=titlex.replace("Markers Notes", "HSC (Markers Notes)");
@@ -942,6 +943,24 @@ window.location="https://thsconline.github.io/frenzy/v/"+viewno+".html?id="+idx+
 return;
 break;
 }
+		
+if(rfx != "NE")
+{
+switch(rfx)
+{
+case "1":
+var tags = tags.replace(".html#", ".html?list1#")
+break;
+case "2":
+var tags = tags.replace(".html#", ".html?list2#")
+break;
+case "rf":
+var tags = tags.replace(".html#", ".html?rf#")
+break;
+default:
+break;
+}
+				
 if (switchx=="yes")
 {
 var tags=treelink;
