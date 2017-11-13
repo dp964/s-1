@@ -1,0 +1,129 @@
+% <html><body>
+\documentclass[11pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage{amsmath,amsthm}
+    \usepackage{amsthm}
+    \usepackage{amssymb}
+\usepackage{setspace}
+    \usepackage[english]{babel}
+    \usepackage{changepage} 
+    \usepackage[mathscr]{euscript}
+    \usepackage[margin=0.8in]{geometry}
+    \usepackage[usenames, dvipsnames]{color}
+    \usepackage{enumitem}
+\usepackage{soulutf8}
+\usepackage{titlesec}
+\newtheoremstyle{thm}{\topsep}{\topsep}%
+     {}%         Body font
+     {}%         Indent amount (empty = no indent, \parindent = para indent)
+     {}% Thm head font
+     {}%        Punctuation after thm head
+     {\newline}
+     {\underline{\thmname{#1}\thmnumber{ #2}:\thmnote{ #3}}\vpi}
+
+\theoremstyle{thm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\titleformat{\subsection}[hang]
+{\normalsize\bfseries}{\thesubsection}{0.5em}{}[{\titlerule[0.1pt]}]
+\renewcommand\thesubsection{\arabic{subsection}.}
+\titleformat{\subsubsection}[hang]{\normalsize\itshape\color{mp}}{}{0.5em}{}
+
+\titlespacing*{\subsection}{0px}{1em}{1.5em}
+\titlespacing*{\subsubsection}{0px}{1em}{0.5em}
+    \definecolor{mp}{RGB}{0, 0, 255}
+
+\newcommand{\textem}[1]{\textcolor{mp}{\textbf{#1}}}
+\newcommand{\bluetxt}[1]{\textcolor{mp}{#1}}
+\newcommand{\dbhr}[0]{\hrule width \hsize \kern 0.6mm \hrule width \hsize \vspace{0.1cm}}
+\newcommand{\vpi}[0]{\medskip \par \noindent}
+\renewenvironment{proof}[1][\proofname]{{\noindent \itshape #1:\vpi}}{$\qed$\vpi}
+
+\makeatletter
+\newsavebox\myboxA
+\newsavebox\myboxB
+\newlength\mylenA
+
+\newcommand*\xoverline[2][0.75]{%
+    \sbox{\myboxA}{$\m@th#2$}%
+    \setbox\myboxB\null% Phantom box
+    \ht\myboxB=\ht\myboxA%
+    \dp\myboxB=\dp\myboxA%
+    \wd\myboxB=#1\wd\myboxA% Scale phantom
+    \sbox\myboxB{$\m@th\overline{\copy\myboxB}$}%  Overlined phantom
+    \setlength\mylenA{\the\wd\myboxA}%   calc width diff
+    \addtolength\mylenA{-\the\wd\myboxB}%
+    \ifdim\wd\myboxB<\wd\myboxA%
+       \rlap{\hskip 0.5\mylenA\usebox\myboxB}{\usebox\myboxA}%
+    \else
+        \hskip -0.5\mylenA\rlap{\usebox\myboxA}{\hskip 0.5\mylenA\usebox\myboxB}%
+    \fi}
+\makeatother
+
+    \title{MATH372 Examples	 25/08/17}
+    \author{}
+    \date{}
+    \begin{document}
+\maketitle
+\subsection*{Examples of Calculating Metric \& LC Connection}
+\begin{example}[$\mathbb{S}^1$ (standard)]
+$\mathbb{S}^1$ is the image of the map: $\gamma: [0,2\pi)\rightarrow \mathbb{R}^2,$\\
+$\gamma(\theta)=(\cos{\theta},\sin{\theta})	$\\[1em]
+The induced metric is $g_{ij}=\Big\langle \partial_i\gamma, \partial_j\gamma\Big\rangle_{\mathbb{R}^2}\,(\theta)$\\[1em]
+That is $g_{1,1}=\Big\langle \partial_1\gamma, \partial_1\gamma\Big\rangle_{\mathbb{R}^2}\,(\theta)=|\gamma'|\,(\theta) = |(-\sin{\theta}, \cos{\theta})|^2=1$\\[1em]
+Arg length is $|\partial_\theta \gamma|=1$ so the arc length derivatives $\displaystyle\frac{\partial}{\partial s}=\displaystyle\frac{\partial}{\partial \theta}$\\
+\end{example}
+\begin{example}[Other Circles]
+$\partial_r (\theta)=r(\cos{\theta}, \sin{\theta})$, $r>0, r\in \mathbb{R},$ $\theta$ as beforefore in (1)\\[1em]
+Now $g_{1,1}(\theta)=\Big|\partial_\theta \gamma_r\Big|^2_{\mathbb{R}^2}\,(\theta) = \Big|r(-\sin{\theta}, \cos{\theta})\Big|^2_{\mathbb{R}^2}=r^2$\\[1em]
+What is the metric? It gives the product $X,Y \in T_0\,\mathbb{S}^1$: $\big\langle X, Y \big\rangle_g = g_{ij}X^i Y^j =r^2 X\,Y$\\[1em]
+Here one has:
+$\displaystyle\frac{\partial}{\partial s}= \displaystyle\frac{1}{|\partial_\theta \gamma|}\displaystyle\frac{\partial}{\partial \theta}=\sqrt{g_{11}}\,\displaystyle\frac{\partial}{\partial \theta}=\displaystyle\frac{1}{r}\displaystyle\frac{\partial}{\partial \theta}$\\
+\vpi
+\textit{Christoffel Symbols}\\
+$\Gamma_{ij}^k = \displaystyle\frac{1}{2}g^{kl}(\partial_i g_{il}+\partial_j g_{ij} - \partial_l g_ij) = 0, g$ is constant\\[1em]
+Note: $\displaystyle\frac{\partial}{\partial s}=\displaystyle\frac{\partial}{\partial \theta}$ if and only if $|\partial_\theta \gamma|=1$\\
+\end{example}
+
+\begin{example}[The Spiral]
+	$\partial(\theta)=e^{\theta}(\cos{\theta}, \sin{\theta})$\\[1em]
+	$g_{11}(\theta)=|\partial_\theta \gamma|^2 =|e^\theta (\cos{\theta}, \sin{\theta})+e^\theta (-\sin{\theta}, \cos{\theta})|^2 = 2e^{2\theta}$\\[0.5em]
+	$\Rightarrow \displaystyle\frac{\partial}{\partial s}=\displaystyle\frac{1}{\sqrt{2} e^\theta}\displaystyle\frac{\partial}{\partial \theta}$\\
+\end{example}
+\newpage
+\begin{example}[$\mathbb{S}^2$ (standard)]
+For $f: \mathscr{D} \rightarrow \mathbb{S}^2, f(x,y)=(x,y,\sqrt{1-x^2-y^2})$\\[1em]
+The metric is $g_{ij}=\big\langle \partial_i f, \partial_j f \big\rangle_{\mathbb{R}^3}$, and so\\
+$g_{11}=\big\langle \partial_x f, \partial_x f \big\rangle_{\mathbb{R}^3} = \left\langle \left(1, 0, \displaystyle\frac{-x}{\sqrt{1-x^2-y^2}} \right) , \left(1, 0, \displaystyle\frac{-x}{\sqrt{1-x^2-y^2}} \right) \right\rangle_{\mathbb{R}^3} $\\
+$= \displaystyle\frac{1-y^2}{1-x^2-y^2}$\\[0.5em]
+$g_{22} = \displaystyle\frac{1-x^2}{1-x^2-y^2}$\\[0.5em] $g_{12}=g_{21}=\displaystyle\frac{xy}{1-x^2-y^2}$\\[1em]
+$g_{ij}=\displaystyle\frac{1}{1-x^2-y^2} \begin{pmatrix}
+	1-y^2       & xy \\
+	xy       & 1-x^2
+\end{pmatrix}$\\[1em]
+Aside: $d \mu = \sqrt{\det{g}}$ - induced measure.\\
+\vpi
+Now for Riemannian matrices this matrix has the property of being positive definite.\\[1em]
+$\det{g}=\displaystyle\frac{(1-y^2)(1-x^2)-x^2 y^2}{(1-x^2-y^2)^2}=\displaystyle\frac{1-x^2-y^2}{(1-x^2-y^2)^2}=\displaystyle\frac{1}{(1-x^2-y^2)}$\\
+\vpi
+\textit{Christoffel Symbols}\\
+$\Gamma_{ij}^k = \displaystyle\frac{1}{2}g^{kl}(\partial_i g_{il}+\partial_j g_{ij} - \partial_l g_ij)$, $i,j,k = 1,2.$\\[1em]
+Now $\Gamma_{ij}^{k}=\Gamma_{ji}^{k}$, so there are $\Gamma_{11}^{1}, \Gamma_{11}^{2}, \Gamma_{22}^{2}, \Gamma_{22}^{2}, \Gamma_{12}^{2}, \Gamma_{12}^{2}$ and
+$\nabla_i X_j = \partial_i X_j + \Gamma_{ij}{k}X_k$\\
+(and so on, the calculation is long)
+\end{example}
+
+
+
+
+
+
+
+
+\end{document}
+% </body></html>
