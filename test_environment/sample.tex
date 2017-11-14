@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[11pt]{report}
     \usepackage[utf8]{inputenc}
     \usepackage{amsmath,amsthm}
     \usepackage{amsthm}
@@ -27,6 +27,7 @@
 
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
+
 
 \titleformat{\subsection}[hang]
 {\normalsize\bfseries}{\thesubsection}{0.5em}{}[{\titlerule[0.1pt]}]
@@ -64,11 +65,105 @@
     \fi}
 \makeatother
 
-    \title{MATH372 Examples 25/08/17}
-    \author{}
+    \title{MATH372 Notes}
+    \author{Daniel P}
     \date{}
     \begin{document}
-\maketitle
+    	    \maketitle
+\part{Differential Geometry}
+\chapter{What are Manifolds?}
+\section{Definition of a Manifold}
+A \textem{$C^k$-manifold} $\mathcal	{M}^n$ is a locally Euclidean "nice" 
+topological space.
+\subsubsection{1. Manifolds as topological spaces}
+A \textem{topological space}, with topology $\mathcal{T}$ 
+(where $\mathcal{M}^n\in \mathcal{T}$) is such that
+	\begin{itemize}
+\item A set $\mathcal{U}\in \mathcal{T}$ is called \textit{open}
+\item Any finite or infinite union of open sets is open and in $\mathcal{T}$ 
+that is for $\{\mathcal{U}_1, \cdots,\,\mathcal{U}_k\}$, the set 
+$\bigcup_{i=1}^{k}{\mathcal{U}_i}\in \mathcal{T}$ or for 
+$\{\mathcal{U}_1,\cdots,  \,\mathcal{U}_k,\cdots \}$, the set 
+$\bigcup_{i=1}^{\infty}{\mathcal{U}_i}\in \mathcal{T}$
+		\item Any finite intersection of open sets is open and in $\mathcal{T}$ 
+		that is for $\{\mathcal{U}_1, ...,  \mathcal{U}_k\}$, the set 
+		$\bigcap_{i=1}^{k}{\mathcal{U}_i}\in \mathcal{T}$
+\end{itemize}
+\subsubsection{2. Hausdorff and Second-Countable}
+However, the topology on manifold needs to be "nice" and so the following 
+restrictions are applied:
+\begin{itemize} 
+\item 
+The topology is \textem{Hausdorff}, meaning for $p\ne q$, then there exists open sets $\mathcal{U}$ and an open set $\mathcal{V}$ such that $p\in \mathcal{U}, q\in \mathcal{V}$ and $\mathcal{U} \cap \mathcal{V} = \emptyset$
+\item The topology is \textem{second-countable}, meaning it has a countable 
+base $\mathcal{F}$ where any $\mathcal{U}\in \mathcal{T}$ can be written as the 
+following countable union 
+$\mathcal{U}=\displaystyle\bigcup_{i=1}^{\infty}(\mathcal{U}_i),$ given that 
+$\mathcal{U}_i\in \mathcal{F}$ or equivalently for all $x\in 
+\mathcal{M}^n,\;\mathcal{U}_\alpha \in \mathcal{T},\; 	x\in 
+\mathcal{U}_\alpha,\;$ there exists a $\mathcal{U}\in F$ such that $x\in 
+\mathcal{U} \subset \mathcal{U}_\alpha$, where $F$ is countable.
+\end{itemize}
+\subsubsection{3. Locally Euclidean}
+Also as per the definition, the manifold is \textem{locally Euclidean}.\\[1em] 
+This means that there exists an open 
+cover $\{\mathcal{U}_i\}_{i \in \mathcal{A}} \subset \mathcal{T}$ and injective 
+(one-to-one) maps: $x_i: \mathcal{U}_i \rightarrow \mathbb{R}^n$ such 
+that for any two \textit{charts} $(\mathcal{U}_1, x_1),\; 
+(\mathcal{U}_2, x_2)$ with $U_1 \cap\, U_2 \ne \emptyset$ (non-empty domain) 
+the \textit{transistion map} $x_1 \circ x_2^{-1} : 
+x_2(\mathcal{U}_1 \cap\, \mathcal{U}_2) \rightarrow 
+x_1(\mathcal{U}_1 \cap\, \mathcal{U}_2)$ is a 
+\textit{$C^k$-homeomorphism} (open sets mapped into open sets)\\[1em]
+The \textem{atlas} is the set containing all the charts 
+$\mathcal{A}=\{x_i: \mathcal{U}_i \rightarrow \mathbb{R}^n\}$, where 
+$x_\alpha$ is a chart.
+\textit{Note:} Smooth (analytic) functions in $\mathbb{R}^n$ are homeomorphisms.
+\newpage\noindent \subsubsection{4. Notes on Definition of Manifold}
+\begin{itemize}
+	\item The transition map $x_\alpha \circ x_\beta^{-1}$ is a map between 
+	Euclidean spaces so differentiation and integration makes sense on this 
+	function (using methods learnt in multivariate \& vector caculus)
+	\item For a set to be closed, given a trivial topological space 
+	$(\mathcal{M}^n, \mathcal{T})$, consider the open set $\mathcal{U}$. Its 
+	compliment $\mathcal{M}^n \setminus \mathcal{U}$ is closed.
+\item Two trivial examples of topological spaces are $\mathcal{M}^n = 
+\emptyset, \mathcal{T} = \{\emptyset\}$ and $\mathcal{M}^n = X, \mathcal{T}=\{X,
+\emptyset\}$\\
+\end{itemize}
+\section{Examples of Manifolds: Euclidean Space}
+Putting aside the trivial cases, claim that Euclidean space itself, that is 
+$\mathbb{R}^n$ is a smooth manifold.\\[1em]
+To verify the claim requires finding and defining the topology $\mathcal{T}$ as 
+well as an atlas $\mathcal{A}$ containing an appropriate set of charts.
+\subsubsection{1. Set the Topology}
+Firstly $\mathbb{R}^n$ needs to be defined as a topological space. Define 
+$\mathbb{R}^n$ as the set $\mathbb{R}^n: \{(x_1, \cdots, x_n): x_i \in 
+\mathbb{R}\}$.\\[1em]
+Consider the \textit{distance} function $d: \mathbb{R}^n \times \mathbb{R}^n 
+\rightarrow [0,\infty)$ given by 
+$d(x,y)=|x-y|=\sqrt{{(x_1-y_1)}^2+\cdots+{(x_n-y_n)}^2}$ and define the 
+\textit{open ball} $B_r(x)=\{y\in \mathbb{R}^n: d(x,y)<r\}$ for all $r>0$ and 
+$x\in \mathbb{R}^n$.\\[1em]
+To construct the topology $\mathcal{T}$, it is done iteratively:
+\begin{enumerate}
+	\item Let $\emptyset \in \mathcal{T}$ and $\mathbb{R}^n \in \mathcal{T}$
+	\item Let ${B_r(x)}\in \mathcal{T}$
+	\item Let ${\mathcal{T}_0 =\{B_r(x): x\in \mathbb{R}^n,\; r > 0\}}$. Then the set containing all the unions $\left\{\bigcup\limits_{S\in T}{S} : T\subset \mathcal{T}_0 \right\} \in \mathcal{T}$
+	\item Let $\{r_1, \cdots, r_m \},\; \{x_1, \cdots, x_m\}$ be finite sequences, where $r_i \in (0,\infty), x_i \in \mathbb{R}^n$.\\[0.5em]
+	Then  $\bigcap\limits_{i=1}^{m}{B_{r_i}(x_i)} \in \mathcal{T}$
+\end{enumerate}
+The topology $\mathcal{T}^{(\mathbb{R}^n)}$ is said to be generated by the 
+distance (function).
+\subsubsection{2. Check the topology is Hausdorff:}
+Let $p,q\in \mathbb{R}^n$, where $p\ne q$, that is $p,q$ are distinct points 
+within $\mathbb{R}^n$\\[1em]
+If $p\ne q$ then $|p-q|>0$.\\[1em]
+Choose $\mathcal{U}_p = B_{\frac{|p-q|}{4}}(p)\in \mathcal{T}$ and $\mathcal{U}_q = B_{\frac{|p-q|}{4}}(q)\in \mathcal{T}$\\[1em]
+The choice of radius was sufficient to ensure that $\mathcal{U}_p \cap 
+\mathcal{U}_q = \emptyset$.\\[1em]
+Since $p,q$ were arbitrary, the topology is Hausdorff.$\qed$
+\newpage\noindent
 \subsubsection{3. Check the topology is Second Countable:}
 It is known that $\mathbb{Q}$ and $\mathbb{Q}^n$ are countable and therefore so 
 is the set $\mathcal{F}=\{B_r(x): x \in \mathbb{Q}^n,\; r\in 
@@ -135,7 +230,99 @@ Then since $\mathcal{F}^{(\mathbb{R}^2)}$ is a base, there exists a $\mathcal{U}
 Take $\mathcal{V}_1 = \mathcal{U}_1 \cap\, \mathbb{S}^1$. Then $p\in \mathcal{V}_1 \in \mathcal{F}^{(\mathbb{S}^1)}$, where $\mathcal{V}_1 \subset \mathcal{V}_0$ as required.\\
 \vpi
 \bluetxt{2.3 Construction of the Atlas:}\\[1em]
-
-
-
+The idea behind constructing the atlas is to write the manifold as graphs over its tangent planes.\\[1em]
+\textit{Atlas \#1: Using 4 charts}\\[1em]
+Pick open subsets of $\mathbb{S}^1$ and charts as follows:\\
+$\mathcal{U}_1: \{(x,y)\in \mathbb{S}^1: y > 0 \}$ and $ x_1: \mathcal{U}_1 \rightarrow \mathbb{R},\; x_1(x,y)= x$\\
+$\mathcal{U}_2: \{(x,y)\in \mathbb{S}^1: y < 0 \}$ and $ x_2: \mathcal{U}_2 \rightarrow \mathbb{R},\; x_2(x,y)= x$\\
+$\mathcal{U}_3: \{(x,y)\in \mathbb{S}^1: x > 0 \}$ and $ x_3: \mathcal{U}_3 \rightarrow \mathbb{R},\; x_3(x,y)= y$\\
+$\mathcal{U}_4: \{(x,y)\in \mathbb{S}^1: x < 0 \}$ and $ x_4: \mathcal{U}_4 \rightarrow \mathbb{R},\; x_4(x,y)= y$\\[1em]
+\textit{Discussion:} Are each of the $\mathcal{U}_i$ are in the topology of $\mathbb{S}^1$?\\[1em]
+(1) The $\mathcal{U}_i$ form a cover for $\mathbb{S}_1$, as each $\mathcal{U}_i \in \mathcal{T}^{(\mathbb{S}^1)}$ and $\mathcal{U}_1 \cap\, \mathcal{U}_2 \cap  \, \mathcal{U}_3 \cap \, \mathcal{U}_4 = \mathbb{S}^1$\\[1em]
+(2) These $x_i$ charts are injective.\\[1em]
+Using the definition of $\mathbb{S}^1$ for the positive and negative portions of the circle, one has $y=\pm\sqrt{1-x^2}$ and $x=\pm\sqrt{1-y^2}$\\[1em]
+So $x_1(x,y)=x_1(x_0, y_0) \Rightarrow x_1(x, \sqrt{1-x^2})=x_1(x_0, \sqrt{1-x_0^2}) \Rightarrow x=x_0,y=y_0$ $(\text{as } 1-x^2=1-x_0^2) $
+and $x_2(x,y)=x_2(x_0, y_0) \Rightarrow x_1(x, -\sqrt{1-x^2})=x_1(x_0, \sqrt{1-x_0^2}) \Rightarrow x=x_0,y=y_0$ $(\text{as } 1-x^2=1-x_0^2) $
+and $x_3(x,y)=x_3(x_0, y_0) \Rightarrow x_1(\sqrt{1-y^2}, y)=x_1(\sqrt{1-y_0^2}, y) \Rightarrow y=y_0,x=x_0$ $(\text{as } 1-y^2=1-y_0^2) $
+and $x_4(x,y)=x_4(x_0, y_0) \Rightarrow x_1(\sqrt{1-y^2}, y)=x_1(\sqrt{1-y_0^2}, y) \Rightarrow y=y_0,x=x_0$ $(\text{as } 1-y^2=1-y_0^2) $\\[1em]
+Claim that $\mathcal{A} =\{x_1, x_2, x_3, x_4\}$ is an atlas for $(\mathbb{S}^1, \mathcal{T}^{(\mathbb{S}^1)})$\\[1em]
+(3) The transition maps are continuous.\\[1em]
+So $x_1^{-1}(x)=(x,\sqrt{1-x^2})$,
+$x_2^{-1}(x)=(x,-\sqrt{1-x^2})$,
+$x_3^{-1}(y)=(\sqrt{1-y^2},y)$, and 
+$x_4^{-1}(y)=(-\sqrt{1-y^2},y)$\\[1em]
+Then $(x_1 \circ x_3^{-1})(x)=x_1(\sqrt{1-y^2}, y)=\sqrt{1-y^2}$ (smooth for $y>0$).\\[1em]
+$(x_2 \circ x_4^{-1})(x)=x_2(-\sqrt{1-y^2}, y)=-\sqrt{1-y^2}$ (smooth for $y<0$), similarly for $(x_3 \circ x_1^{-1})$ and $(x_4 \circ x_2^{-1})$\\[1em]
+(Note that $\mathcal{U}_1\cap\,\mathcal{U}_2 =\emptyset$ and $\mathcal{U}_3\cap\,\mathcal{U}_4 =\emptyset$, $(x_1 \circ x_2^{-1})=(x_2 \circ x_1^{-1})=x$ and $(x_3 \circ x_4^{-1})=(x_4 \circ x_3^{-1})=y$ but isn't required)
+\newpage\noindent
+\textit{Atlas \#2: Using 3 charts}\\[1em]
+Pick open subsets of $\mathbb{S}^1$ and charts as follows:\\
+$\mathcal{U}_1: \{(x,y)\in \mathbb{S}^1: y > 0 \}$ and $ x_1: \mathcal{U}_1 \rightarrow \mathbb{R},\; x_1(x,y)= x$\\
+$\mathcal{U}_2: \{(x,y)\in \mathbb{S}^1: x+y < 0 \}$ and $ x_2: \mathcal{U}_2 \rightarrow \mathbb{R},\; x_2(x,y)= \frac{\sqrt{2}}{2}(y-x)$\\
+$\mathcal{U}_3: \{(x,y)\in \mathbb{S}^1: x > 0 \}$ and $ x_3: \mathcal{U}_3 \rightarrow \mathbb{R},\; x_3(x,y)= y$\\[1em]
+\end{example}
+\newpage\noindent
+\section{Properties of Manifolds}
+\subsubsection{1. Charts and Compatible Charts}
+For $(\mathcal{M}^n, \mathcal{T})$ be a Hausdorff, second-countable, 
+topological 
+space. Recall that a manifold is locally a Euclidean space.\\[1em]
+Recall that a \textem{chart} is a pair $(\mathcal{U}, x_i) $ where $U_i 
+\subset \mathcal{M}^n$ and $x_i: \mathcal{U} \rightarrow \mathbb{R}^n$ is a 
+homeomorphism onto its image (it is an injective map).\\[1em]
+The \textem{transition maps} (also called an overlap map), provided are:
+$\mathcal{U}_1 
+\cap \mathcal{U}_2 \ne \emptyset$\\
+$x_1 \circ x_2^{-1} : 
+x_\beta(\mathcal{U}_1 \cap\, \mathcal{U}_2) \rightarrow 
+x_\alpha(\mathcal{U}_1 \cap\, \mathcal{U}_2)$ and
+$x_2 \circ x_1^{-1} : 
+x_\beta(\mathcal{U}_1 \cap\, \mathcal{U}_2) \rightarrow 
+x_\alpha(\mathcal{U}_1 \cap\, \mathcal{U}_2)$\\[1em]
+If these maps are smooth, then the charts are called \textem{compatible}. As as 
+before if such maps exist that cover $\mathcal{M}$, then $\mathcal{M}$ is a 
+smooth manifold. (Without loss of generality, this also applies to $C^k$ 
+transition maps with $C^k$ inverses)
+\subsubsection{2. Maximal Atlas}
+Set $(\mathcal{M}^n, \mathcal{T}, \mathcal{A})$ be a $C^k$-manifold. Suppose 
+that 
+for all charts $(\mathcal{U}_i, x_i)$ where $x_i$ is compatible 
+with $\mathcal{A}$ (with $x_i \in \mathcal{A}$), then 
+$\mathcal{A}$ is called a \textem{maximal atlas}.\\[1em]
+Given any manifold, where the atlas $\mathcal{A}$ is not maximal, add any 
+charts compatible with $\mathcal{A}$ until it is maximal.\\[1em]
+In other terms an atlas is maximal if there does not exist any atlas 
+$\mathcal{A}'$ such that $\mathcal{A} \subseteq \mathcal{A}'$
+\subsubsection{3. Differentiable maps between manifolds}
+Let $(\mathcal{M}_1^n, \mathcal{T}_1, \mathcal{A}_1)$ and $(\mathcal{M}_2^n, 
+\mathcal{T}_2,\mathcal{A}_2)$ be smooth manifolds with maximal 
+atlases, with respective charts $(\mathcal{U}, x)$ and 
+$(\mathcal{V}, y)$ where $x \in \mathcal{A}_1$ and $y \in 
+\mathcal{A}_2$ \\[1em]
+Then a map between manifolds $f: \mathcal{M}_1 \rightarrow \mathcal{M}_2$ is 
+said to be 
+\textem{differentiable} at $p\in \mathcal{M}^1$ if given charts $x: \mathcal{U} 
+\rightarrow \mathbb{R}^n$ and $y: \mathcal{V} \rightarrow \mathbb{R}^n$ 
+(where $p\in \mathcal{U}$ and $f(\mathcal{U})\subset \mathcal{V}$), 
+the map $y \circ f \circ x^{-1}: x(\mathcal{U}) \rightarrow 
+y(f(\mathcal{U}))$ is differentiable at $x(p) \in \mathbb{R}^n$\\[1em]
+\textit{Note:} More generally, the map $f$ is called smooth if the composition 
+as before $y \circ f \circ x^{-1}$ is smooth. If for a homeomorphism $f: 
+\mathcal{M}_1 \rightarrow \mathcal{M}_2$ and $f^{-1}$ are smooth, then 
+$\mathcal{M}_1$ and $\mathcal{M}_2$ are said to be \textit{diffeomorphic}.
+\newpage\noindent 
+\subsubsection{4. Tangent Vectors}
+Let $(\mathcal{M}^n, \mathcal{T}, \mathcal{A})$ be a smooth manifold with 
+maximal atlas, then a map $\alpha: (-\varepsilon, \varepsilon) \rightarrow 
+\mathcal{M}^n$ that is differentiable at every $\alpha(t)$ is called a 
+\textit{differentiable curve}.\\[1em]
+Let $\alpha(0)= p \in \mathcal{M}^n$, then $D_p$ = $\{f: \mathcal{M}^n 
+\rightarrow \mathbb{R}^n: f \text{ is differentiable at } p\}$.\\[1em]
+The \textem{tangent vector} to $\alpha$ at $t=0$ is an \textit{operator}: 
+$\alpha'(0): D_p \rightarrow \mathbb{R}$ given by, for all $f \in D_p$, 
+$\alpha'(0) f = \displaystyle\frac{d}{dt}(f \circ \alpha)\bigg|_{t=0}$
+\chapter{Connections}
+\bluetxt{Definition:}\\[1em]
+An \textem{afffine connection} $\nabla$ is a map $\nabla : \Gamma(TM)\times 
+\Gamma(T)$
 \end{document}
