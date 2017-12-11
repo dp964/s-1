@@ -1098,7 +1098,7 @@ document.write("<a class=\"border\" href=\""+linkx+"\">Show Worked Solutions<\/a
 
 }
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"\/s\/frenzy\/"+tagsx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+tagsx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 break;
 
