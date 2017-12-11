@@ -1050,8 +1050,9 @@ else
 if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
 var newid=idx.replace("_s", "")
-var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+idx+"_s";
 var idx=idx.replace("_s", " w. sol");
+var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+idx;
+
 var linkx="\/s\/?study="+viewno+"&id="+newid;
 }
 else
