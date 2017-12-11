@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage[english]{babel}
+\usepackage{changepage} 
+\usepackage[mathscr]{euscript}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{soulutf8}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{tocloft}
+\usepackage{multicol}
+\newtheoremstyle{thm}{\topsep}{\topsep}{}{}{}{}{\newline}{\underline{\thmname{#1}\thmnumber{
+ #2}:\thmnote{ #3}}\vpi}
+\theoremstyle{thm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection}{0.5em}{}[{\titlerule[0.1pt]}]
+\renewcommand\thesubsection{\arabic{subsection}.}
+\titleformat{\subsubsection}[hang]{\normalsize\itshape\color{mp}}{}{0.5em}{}
+\titlespacing*{\subsection}{0px}{1em}{1.5em}
+\titlespacing*{\subsubsection}{0px}{1em}{0.5em}
+\definecolor{mp}{RGB}{0, 0, 255}
+\newcommand{\textem}[1]{\textcolor{mp}{\textbf{#1}}}
+\newcommand{\bluetxt}[1]{\textcolor{mp}{#1}}
+\newcommand{\cltext}[1]{\textcolor{black}{#1}}
+\newcommand{\dbhr}[0]{\hrule width \hsize \kern 0.6mm \hrule width \hsize 
+\vspace{0.1cm}}
+\newcommand{\vpi}[0]{\medskip \par \noindent}
+\title{1999 Abbotsleigh Maths Ext 2 Trial - Q4 (a) & Solutions}
+\begin{document}
+\subsection*{1999 Abbotsleigh Maths Ext 2 Trial - Q4 (a) (Worked Solutions)}
+[i] Show that tangent to the ellipse $\displaystyle\frac{{{x^2}}}{{12}} + 
+\frac{{{y^2}}}{4} = 1$ at the point $P\left( {3,1} \right)$ has the equation $x 
++ y = 4$\\[1em]
+[ii] If this tangent cuts the directrix at the point $T$ and $S$ is the 
+corresponding focus, show that $SP$ and $ST$ are at right angles to each 
+other.\\
+\subsubsection{Worked Solutions}:
+[i]\\
+$\displaystyle \frac{{{x^2}}}{{12}} + \frac{{{y^2}}}{4} = 1$\\
+$\displaystyle \frac{{8x}}{{12}} + \frac{{2y}}{4} \cdot \frac{{dy}}{{dx}} = 0$\\
+$\therefore \frac{{dy}}{{dx}} =  - \frac{x}{{3y}}$\\[1em]
+At $P\left( {3,1} \right)$, \\
+$\displaystyle \frac{{dy}}{{dx}} =  - \frac{3}{3} = 1$\\
+$\therefore y - 1 =  - 1\left( {x - 3} \right)$\\
+$ \Rightarrow x + y = 4$\\[1em]
+[ii]\\
+$e = \sqrt {1 - \frac{4}{{12}}}  = \frac{{\sqrt 2 }}{{\sqrt 3 }}$\\
+So the focus is $\left( {2\sqrt 3  \cdot \frac{{\sqrt 2 }}{{\sqrt 3 }},0} \right) = \left( {2\sqrt 2 ,\;0} \right)$ and the directrix is $x = \frac{{2\sqrt 3 }}{{\left( {\frac{{\sqrt 2 }}{{\sqrt 3 }}} \right)}} = 3\sqrt 2 $\\[1em]
+At $T$, $x + y = 4$ and $x = 3\sqrt 2 $\\
+$ \Rightarrow y = 4 - 3\sqrt 2 $\\
+$\therefore P\left( {3,1} \right),\;S\left( {2\sqrt 2 ,0} \right),\;T\left( {3\sqrt 2 ,\;4 - 3\sqrt 2 } \right)$\\[1em]
+$\therefore $ gradient $SP$ $ \times $ gradient $ST$\\
+$ = \frac{1}{{3 - 2\sqrt 2 }} \cdot \frac{{4 - 3\sqrt 2 }}{{\sqrt 2 }} = \frac{{4 - 3\sqrt 2 }}{{3\sqrt 2  - 4}}$\\
+$ =  - 1$\\[1em]
+$\therefore $ $SP$ and $ST$ are at $90^\circ $ to each other.\\
+\end{document}
