@@ -1041,6 +1041,7 @@ var viewnox=viewno.split(".")[0]
 var topic=getParameterByName('topic', "Question #");
 
 if (topic=="Question #"){
+	var topic = "";
 if(idx=="index" || idx=="! temp")
 {
 // var tagsx="questions\/"+subj+"\/"+idx+".html"
@@ -1067,7 +1068,6 @@ else
 var idx="";
 var tagsx="topics\/"+subj+"\/"+topic;
 }
-
 var myurl = document.location;
 document.write("<html><head>");
 document.write("<title>THSC Online - "+tix+" - "+ topic + idx+"</title>");
