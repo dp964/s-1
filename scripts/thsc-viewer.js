@@ -1022,7 +1022,7 @@ break;
 case "?study":
 var searchq=window.location.search+""
 var viewno=getParameterByName('study', "000")
-
+var viewnox = viewno.split(".")[0];
 var idx=getParameterByName('id', "index");
 var newid=idx.replace("_s", "")
 switch(viewno)
@@ -1031,7 +1031,8 @@ case "534.3":
 var tix="Maths Ext 2 - Conics";
 var subj="Maths Ext 2";
 var tags="/s/yr12/Maths/Questions%20by%20Topic/topic_conics_extension2.html#"+newid;
-break;
+
+var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+idx;
 default:
 break;
 }
@@ -1042,7 +1043,7 @@ var topic=getParameterByName('topic', "Question #");
 if (topic=="Question #"){
 if(idx=="index" || idx=="! temp")
 {
-var tagsx="questions\/"+subj+"\/"+idx+".html"
+// var tagsx="questions\/"+subj+"\/"+idx+".html"
 }
 else
 {
@@ -1050,12 +1051,12 @@ if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
 var newid=idx.replace("_s", "")
 var idx=idx.replace("_s", " w. sol");
-var tagsx="questions\/"+subj+"\/"+viewnox+"_"+newid+".html?s"
+var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+idx+"_s";
 var linkx="\/s\/?study="+viewno+"&id="+newid;
 }
 else
 {
-var tagsx="questions\/"+subj+"\/"+viewnox+"_"+idx+".html"
+var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+idx;
 var linkx="\/s\/?study="+viewno+"&id="+idx+"_s";
 }
 
