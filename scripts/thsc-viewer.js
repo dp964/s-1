@@ -1058,6 +1058,8 @@ else
 var linkx="\/s\/?study="+viewno+"&id="+idx+"_s";
 }
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
+var downloadtex = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".tex"
+var downloadlk = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".pdf"
 }
 }
 else
@@ -1094,6 +1096,8 @@ document.write("<a class=\"border\" href=\""+linkx+"\">Show Worked Solutions<\/a
 }
 
 }
+document.write("<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
+document.write("<a class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+tagsx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
