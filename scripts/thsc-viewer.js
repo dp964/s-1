@@ -1082,19 +1082,17 @@ document.write("<span class=\"overlaybar\" style=\"width:100%;background-color:#
 document.write("<span class=\"overlayinsert folder-path-element\">");
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+topic+idx);
 document.write("<span style=\"float:right;\">");
-if (topic=="Question #"){
-if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol" || idx=="index" || idx=="! temp")
-{
-if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol")
+if (topic!=""){}
+		else
+		{
+if (oid.slice(-2)=="_s")
 {
 document.write("<a class=\"border\" href=\""+linkx+"\">Hide Worked Solutions<\/a>&nbsp;&nbsp;");
-}
 }
 else
 {
 document.write("<a class=\"border\" href=\""+linkx+"\">Show Worked Solutions<\/a>&nbsp;&nbsp;");
 }
-
 }
 document.write("<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 document.write("<a class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
