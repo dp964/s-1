@@ -1,0 +1,41 @@
+<html><head><title>LIST FOLDERS FROM GOOGLE DRIVE</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link href="/s/styles/style.css" rel="stylesheet" type="text/css">
+</head><body>
+
+<h3>LIST FOLDERS FROM GOOGLE DRIVE</h3>
+<i>About this app</i><br><br>
+This app was created to display folders from Google Drive :<br>
+<ol>
+<li>Retrieve list of folders and files from Google Drive</li>
+<li>Render HTML and post-processing</li>
+</ol>
+<br>
+<i>Launch App</i><br><br>
+To launch "List Files from Google Drive", you can launch it here, <br>
+<input id="serve" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"> (optional: enter Google Drive file id)<br><br>
+<a target="blank" id="launch" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://script.google.com/macros/s/AKfycbx1Kjw1qniJW7HXsNSMeyJeQ45BzdCFlcEXouvlvb6he15FPHg/exec">Launch App</a>
+<script>
+function urlupdate()
+{
+var qserve=document.getElementById("serve").value;
+var qlink = document.getElementById("launch").href.split("/exec")[0] 
+document.getElementById("launch").href=qlink+"/exec?serve=drive&folder="+qserve;
+
+}
+</script>
+<br><br>
+<i>Custom Configurations</i><br><br>
+The script can be configured by adding parameters to the script url as follows<br><br>
+<span style="color:blue;"> ?serve:</span> the encrypted id of the folder in Google Drive<br>
+&emsp;&emsp;<i>drive: </i> Specifies the ID is not encrypted<br>
+<br>
+<span style="color:blue;"> ?folder:</span> the id of the folder in Google Drive, requires "serve" set to "drive" 
+<br><br>
+<i>Privacy Policy & Terms of Service:</i><br><br>
+Users upon granting access to the script, grant access to any Google Drive folders & files that can be retrieved by the user.<br><br>
+Users email address and file content may be displayed but are not stored remotely. No information is retained or disclosed to any other user or third-party organisation.<br><br>
+
+</body></html>
