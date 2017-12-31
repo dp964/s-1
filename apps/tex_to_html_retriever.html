@@ -1,0 +1,12 @@
+<html><head><title>ABOUT TEX TO HTML RETRIEVER</title></head><body>
+<b>ABOUT TEX TO HTML RETRIEVER</b><br><br>
+This app was created to parse TEX files into HTML. The script works as follows:<br>
+<ol>
+<li>Extract .tex file from source as raw text</li>
+<li>Wrap raw text in a XHTML skeleton/container, parsing any errors still as raw text</li>
+<li>Use a XML parser to convert the XHTML into raw HTML</li>
+<li>Load MathJax script and replace $...$ pattern with regex</li>
+<li>Run regex find/replace patterns to replace non-math LATEX commands into HTML tags</li>
+<li>Post-processing and display HTML output using a predefined CSS template</li>
+</ol>
+</body></html>
