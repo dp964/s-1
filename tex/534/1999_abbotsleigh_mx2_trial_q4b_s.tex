@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage{changepage} 
+\usepackage[mathscr]{euscript}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{multicol}
+\usepackage{pgf,tikz}
+\usepackage{wrapfig}
+\usepackage{mathrsfs}\usetikzlibrary{arrows}
+\title{Abbotsleigh 1999 MX2 Trial Q4(b) & solutions}
+\author{}
+\date{}
+\begin{document}
+\section*{Abbotsleigh 1999 MX2 Trial Q4(b)}
+\textit{Q4 (b)(i)}\\[1em]
+Show that the tangent to the rectangular hyperbola $xy = c^2$ at the point $T(ct, \frac{c}{t})$ has equation $x^2 + t^2 y = 2ct$\\[1em]
+\textit{Q4 (b)(ii)}\\[1em]
+The tangents to the rectangular hyperbola $xy=c^2$ at the points $P(cp,\frac{c}{p})$ and $Q(cq,\frac{c}{q})$, where $pq = 1$, intersect at \(R\).\\[1em]
+Find the equation of the locus of $R$ and state any restrictions on the value of $x$ for this locus.
+\subsubsection*{Worked Solution:}
+\textit{Q4 (b)(i)}\\[1em]
+Firstly to find the derivative of the rectangular hyperbola (as a graph)
+\begin{flalign*}
+&xy=c^2 \Rightarrow y= \frac{c^2}{x} & \hfill \\
+&\Rightarrow \frac{dy}{dx} = -\frac{c^2}{x^2}
+\end{flalign*}\\
+Therefore at $T\left(c, \displaystyle\frac{c}{t}\right)$, $\displaystyle\frac{dy}{dx}=-\displaystyle\frac{c^2}{(ct)^2}$\\
+$= -\displaystyle\frac{1}{t^2}$\\[1em]
+Now, using the gradient-point form of a line:
+\begin{flalign*}
+&y-\frac{c}{t} = -\frac{1}{t^2}(x-ct) & \hfill \\
+& {t^2}y-ct = -x+ct \\
+\end{flalign*}
+Therefore the tangent has equation
+$$x+t^2y=2ct$$
+\newpage\noindent
+\textit{Q4 (b)(ii)}\\[1em]
+Similar the equations of tangents at $P$ and $Q$ are:
+\begin{equation}
+x+p^2y=2cp
+\end{equation}
+and
+\begin{equation}
+x+q^2y=2cq
+\end{equation}
+Multiple equation (1) by $q$ and (2) by $p$ to give:
+\begin{equation*}
+qx+p^2qy=2cpq
+\end{equation*}
+\begin{equation*}
+px+pq^2y=2cpq
+\end{equation*}
+and since it is given that $pq=1$ , one has equations (3) and (4) respectively:
+\begin{equation}
+qx=2c-py
+\end{equation}
+\begin{equation}
+px=2c-qy
+\end{equation}
+Intersect equations (3) and (4) to find $R$, that is (4) $-$ (3):
+$$(p-q)x =(p-q)y$$
+Divide through by $p-q$ to give the locus of $R$ as the line $y=x$.\\[1em]
+But $x=0$ given $c\ne 0$, when substituted into (1) and (2) imply that $p=0$ and $q=0$\\, which is a contradiction.
+Therefore, the locus of $R$ is the line $y=x$ where $x \ne 0$
+
+\end{document}

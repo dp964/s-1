@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage{changepage} 
+\usepackage[mathscr]{euscript}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{multicol}
+\usepackage{pgf,tikz}
+\usepackage{wrapfig}
+\usepackage{mathrsfs}\usetikzlibrary{arrows}
+    \title{James Ruse 2006 MX2 Trial Q8(c) & solutions}
+    \author{}
+    \date{}
+    \begin{document}
+\section*{James Ruse 2006 MX2 Trial Q8(c)}
+Given $a_1, a_2, a_3, \dots, a_n$ and $b_1, b_2, b_3, \dots, b_n$ are positive real numbers,\\
+where $A_n = a_1 + a_2 + a_3 + \cdots + a_n$ and $B_n = b_1 + b_2 + b_3 + \cdots + b_n$ are such that\\
+$a_1, a_2, a_3, \dots, a_n > 0$, $b_1, b_2, b_3, \dots, b_n > 0$ and $A_r \leq B_r$, for $r=1,2,3,\dots, n$
+
+\textit{Q8 (c)(i)}\\[1em]
+Prove by mathematical induction for $n=1,2,3, \dots$ that:
+$$\begin{split}\frac{1}{\sqrt{b_n}}\,B_n+\left(\frac{1}{\sqrt{b_{n-1}}}-\frac{1}{\sqrt{b_n}}\right)B_{n-1}+\left(\frac{1}{\sqrt{b_{n-2}}}-\frac{1}{\sqrt{b_{n-1}}}\right)B_{n-2}
++ \cdots + \left(\frac{1}{\sqrt{b_{1}}}-\frac{1}{\sqrt{b_2}}\right)B_{1}=\\ \sqrt{b_1} + \sqrt{b_2} + \sqrt{b_3} + \cdots + \sqrt{b_n}\end{split} $$\\
+\textit{Q8 (c)(ii)}\\[1em]
+Hence, given:
+$$\begin{split}
+\frac{a_1}{\sqrt{b_1}}+\frac{a_2}{\sqrt{b_2}}+\frac{a_3}{\sqrt{b_3}}+\cdots+\frac{a_n}{\sqrt{b_n}}=\\
+\frac{1}{\sqrt{b_n}}\,A_n+\left(\frac{1}{\sqrt{b_{n-1}}}-\frac{1}{\sqrt{b_n}}\right)A_{n-1}+\left(\frac{1}{\sqrt{b_{n-2}}}-\frac{1}{\sqrt{b_{n-1}}}\right)A_{n-2}
++ \cdots + \left(\frac{1}{\sqrt{b_{1}}}-\frac{1}{\sqrt{b_2}}\right)A_{1}\end{split}$$
+\textit{Q8 (c)(iii)}\\[1em]
+Deduce that: $\displaystyle\sum_{r=1}^{n}{\sqrt{a_r}} \leq \displaystyle\sum_{r=1}^{n}{\sqrt{b_r}}$
+
+\subsubsection*{Worked Solutions:}
+\textit{Q8 (c)(i)}\\[1em]
+\underline{For $n=1$:} This case is trivial.\\[1em]
+\underline{For $n=2$:}
+\begin{flalign*}
+\text{LHS} &=\frac{1}{\sqrt{b_2}}\,B_2 + \left(\frac{1}{\sqrt{b_1}}-\frac{1}{\sqrt{b_2}}\right)B_1 &\hfill \\
+&=\frac{1}{\sqrt{b_2}}(b_1+b_2) + \left(\frac{1}{\sqrt{b_1}}-\frac{1}{\sqrt{b_2}}\right)b_1\\
+&=\frac{b_1}{\sqrt{b_2}}+\sqrt{b_2} + \sqrt{b_1}-\frac{b_1}{\sqrt{b_2}}\\
+&=\sqrt{b_2} \text{\quad as required. Therefore, true for $n=2$}
+\end{flalign*}\\
+Assume result holds up to some $n=k$ (strong induction), that is
+$$\frac{1}{\sqrt{b_k}}\,B_k+\left(\frac{1}{\sqrt{b_{k-1}}}-\frac{1}{\sqrt{b_k}}\right)B_{k-1}
++ \cdots + \left(\frac{1}{\sqrt{b_{1}}}-\frac{1}{\sqrt{b_2}}\right)B_{1}=\sum_{r=1}^{k}{\sqrt{b_r}}$$\\
+\underline{For $n=k+1$}
+\begin{flalign*}
+\text{LHS} &=\frac{1}{\sqrt{b_{k+1}}}(B_{k+1}+\left(\frac{1}{\sqrt{b_{k}}}-\frac{1}{\sqrt{b_{k+1}}}\right)B_{k}+\left(\frac{1}{\sqrt{b_{k-1}}}-\frac{1}{\sqrt{b_k}}\right)B_{k-1}
++ \cdots + \left(\frac{1}{\sqrt{b_{1}}}-\frac{1}{\sqrt{b_2}}\right)B_{1} &\hfill \\
+&= \frac{1}{\sqrt{b_{k+1}}}(B_{k+1}-B_k)+\left(\frac{1}{\sqrt{b_k}}\,B_k
++\left(\frac{1}{\sqrt{b_{k-1}}}-\frac{1}{\sqrt{b_k}}\right)B_{k-1}
++ \cdots + \left(\frac{1}{\sqrt{b_{1}}}-\frac{1}{\sqrt{b_2}}\right)B_{1}\right)\\
+&= \frac{1}{\sqrt{b_{k+1}}}(b_{k+1}) +\sum_{r=1}^{k}{\sqrt{b_r}}\\
+&= \sqrt{b_{k+1}} +\sum_{r=1}^{k}{\sqrt{b_r}}\\
+&= \sum_{r=1}^{k+1}{\sqrt{b_r}}
+\end{flalign*}\\
+Therefore, since the initial case and two consecutive cases hold, by the principle of Mathematical Induction, the proposition is true $\qed$.\\[1em]
+\textit{Q8 (c)(ii)}\\
+\begin{flalign*}
+\sum_{r=1}^{n}{\frac{a_r}{\sqrt{b_r}}} &=
+\frac{1}{\sqrt{b_k}}\,A_n+\left(\frac{1}{\sqrt{b_{n-1}}}-\frac{1}{\sqrt{b_n}}\right)A_{n-1}
++ \cdots + \left(\frac{1}{\sqrt{b_{1}}}-\frac{1}{\sqrt{b_2}}\right)A_{1} & \hfill \\
+&\leq \frac{1}{\sqrt{b_k}}\,B_n+\left(\frac{1}{\sqrt{b_{n-1}}}-\frac{1}{\sqrt{b_n}}\right)B_{n-1}
++ \cdots + \left(\frac{1}{\sqrt{b_{1}}}-\frac{1}{\sqrt{b_2}}\right)B_{1} \quad\text{since $A_i \leq B_i$ for all $0<i\leq n$}\\
+& = \sum_{r=1}^{n}{\sqrt{b_r}}
+\end{flalign*}
+\newpage\noindent
+\textit{Q8 (c)(iii)}\\[1em]
+Since all $a_r>0$ and $b_r>0$ for all $0<r\leq n$, therefore from Q8(b)(ii)
+$$\sqrt{a_r}<\frac{1}{2}\left(\frac{a_r}{\sqrt{b_r}}+\sqrt{b_r} \right),\quad\text{for all $r$ where $0<r\leq n$}$$\\
+Summing over $n$ terms gives:
+\begin{flalign*}
+\sum_{r=1}^{n}{\sqrt{a_r}} &\leq \sum_{r=1}^{n}{\frac{1}{2}\left(\frac{a_r}{\sqrt{b_r}}+\sqrt{b_r} \right)}  &\hfill\\
+&= \frac{1}{2} \left(\sum_{r=1}^{n}{\frac{a_r}{\sqrt{b_r}}}\right)+\frac{1}{2}\left(\sum_{r=1}^{n}{\sqrt{b_r}}\right) \quad \text{(rearranging the sum)}\\
+&\leq  \frac{1}{2} \left(\sum_{r=1}^{n}{\sqrt{b_r}}\right)+\frac{1}{2}\left(\sum_{r=1}^{n}{\sqrt{b_r}}\right) \quad \text{(using the result from Q8(c)(ii))}\\
+&= \sum_{r=1}^{n}{\sqrt{b_r}} \quad \text{as required}\\
+\end{flalign*}
+\end{document}
