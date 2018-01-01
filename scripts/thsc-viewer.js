@@ -38,7 +38,13 @@ document.write("<h3>THSC TREE</h3>");
 document.write("<i>thsconline</i><br><br>");
 document.write("Access extra content here <br><br>");
 document.write("<img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;");
-document.write("<a style=\"border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;\" href=\"apps\/\">apps</a><br><br>");
+document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"apps\/\">apps</a><br><br>");
+document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"fonts\/\">fonts</a><br><br>");
+document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"images\/\">images</a><br><br>");
+document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"scripts\/\">scripts</a><br><br>");
+document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"styles\/\">styles</a><br><br>");
+
+
 document.write("</body></html>");
 break;
 
