@@ -26,8 +26,8 @@ document.getElementById("qtitle").value=titlex;
 document.getElementById("qid").value=idx;
 document.getElementById("qsearch").value=searchq;
 break;
-case: "?easter-eggs":
-case: "?tree":
+case "?easter-eggs":
+case "?tree":
 
 document.write("<html><head><title>THSC TREE</title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
