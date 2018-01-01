@@ -28,23 +28,25 @@ document.getElementById("qsearch").value=searchq;
 break;
 case "?easter-eggs":
 case "?tree":
-
-document.write("<html><head><title>THSC TREE</title>");
-document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
-document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\">");
-document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\">");
-document.write("<\/head><body>");
-document.write("<h3>THSC TREE</h3>");
-document.write("<i>thsconline</i><br><br>");
+document.write("<html><head>");
+document.write("<meta charset=\"utf-8\">");
+document.write("<link href=\"/s/styles/style-tree.css\" rel=\"stylesheet\" type=\"text/css\">");
+document.write("<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/s/images/icon_def.png\">");
+document.write("<title id=\"title\">thsconline</title>");
+document.write("</head><body style=\"margin-left:45px;margin-top:45px;\">");
+document.write("<h3 id=\"header\">thsconline tree</h1>");
 document.write("Access extra content here <br><br>");
-document.write("<img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;");
-document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"apps\/\">apps</a><br><br>");
-document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"fonts\/\">fonts</a><br><br>");
-document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"images\/\">images</a><br><br>");
-document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"scripts\/\">scripts</a><br><br>");
-document.write("<a style=\"color:blue !important;text-decoration:none;\" href=\"styles\/\">styles</a><br><br>");
-
-
+document.write("<table><tbody id=\"tbody\">");
+document.write("<tr><td><img src=\"/s/images/icon_back.png\">&nbsp;&nbsp;<a href=\"../?\">[Parent Directory]</a></td></tr>");
+document.write("<tr><td><img src=\"/s/images/icon_home.png\">&nbsp;&nbsp;<a href=\"/s/\">[View Site]</a></td></tr>");
+document.write("<tr><td>&nbsp;</td></tr>");
+document.write("<tr><td><h5>Folders:</h5></td></tr>");
+document.write("<tr><td><img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;<a href=\"apps/\">apps</a></td></tr>");
+document.write("<tr><td><img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;<a href=\"fonts\/\">fonts</a></td></tr>");
+document.write("<tr><td><img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;<a href=\"images\/\">images</a></td></tr>");
+document.write("<tr><td><img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;<a href=\"scripts\/\">scripts</a></td></tr>");
+document.write("<tr><td><img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;<a href=\"styles\/\">styles</a></td></tr>");
+document.write("</table>");
 document.write("</body></html>");
 break;
 
