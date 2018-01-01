@@ -26,6 +26,24 @@ document.getElementById("qtitle").value=titlex;
 document.getElementById("qid").value=idx;
 document.getElementById("qsearch").value=searchq;
 break;
+case: "?easter-eggs":
+case: "?tree":
+
+document.write("<html><head><title>THSC TREE</title>");
+document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
+document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\">");
+document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\">");
+document.write("<\/head><body>");
+document.write("<h3>THSC TREE</h3>");
+document.write("<i>thsconline</i><br><br>");
+document.write("Access extra content here <br><br>");
+document.write("<img src=\"/s/images/icon_folder.png\">&nbsp;&nbsp;");
+document.write("<a style=\"border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;\" href=\"apps\/\">apps</a><br><br>");
+document.write("</body></html>");
+break;
+
+
+
 case "?login":
 window.location="https://script.google.com/macros/s/AKfycbxUmQQmSMo9QJmDrTmLOdGyKJ3y5SDpJZeC6PKGwDExP3aD7o3T/exec";
 break;
