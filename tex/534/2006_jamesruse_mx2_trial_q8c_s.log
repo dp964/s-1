@@ -941,4 +941,72 @@ Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 ("C:\Program Files\MiKTeX\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pd
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+
+("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+
+("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 19.
+
+("C:\Program Files\MiKTeX\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+! Missing } inserted.
+<inserted text> 
+                }
+l.26 ...t{b_3} + \cdots + \sqrt{b_n} \end{split} $
+                                                  $\\
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.26 ..._3} + \cdots + \sqrt{b_n} \end{split} $$\\
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.27 \textit{Q8 (c)(ii)}\\[1em]
+                               
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.27 \textit{Q8 (c)(ii)}\\[1em]
+                               
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.29 $
+      $\begin{split}
+? 
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.29 $$\begin{split}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.29 $$\begin{split}
+                    
+? 
