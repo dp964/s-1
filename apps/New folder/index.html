@@ -1,0 +1,24 @@
+<html><head><title>ITS Directory Listing App</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="/its_data/styles/style-tree.css" rel="stylesheet" type="text/css">
+</head><body>
+
+<h3>ITS Directory Listing App</h3>
+<i>Launch App</i><br><br>
+To launch "List Files from Google Drive", you can launch it here, login using the ITS email (its@crone.com.au)<br>
+<input id="serve" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"> (optional: enter Google Drive folder id)<br><br>
+<a target="blank" id="launch" style="border-radius:5px; border: 1px solid blue; text-decoration:none !important;" href="https://script.google.com/macros/s/AKfycbyQVNg3nJ56R5ICe-XNfLqraj7VQJm_2oHoN8oGr1ZtINl7WIuz/exec">Launch App</a>
+<script>
+function urlupdate()
+{
+var qserve=document.getElementById("serve").value;
+var qlink = document.getElementById("launch").href.split("/exec")[0] 
+if(typeof qserve =="undefined" || qserve==""){qserve="default"}
+document.getElementById("launch").href=qlink+"/exec?serve=drive&folder="+qserve;
+
+}
+</script>
+<br><br>
+For info about the app <a href="info.html">click here</a>
+</body></html>

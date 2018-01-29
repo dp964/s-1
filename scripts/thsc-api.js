@@ -385,6 +385,9 @@ thislink= anchors[i]
 valuex=thislink.innerHTML;
 hrefx=thislink.href;
 classx=thislink.className;
+// COMMMENT
+thislink.href="#nodownload"; 
+
 if(classx!="" || classx=="x" || valuex=="View Sitemap" || valuex=="View Source" || valuex=="Back to Year 12 - HSC" || valuex=="Back to Year 11 - Preliminary" || valuex=="Additional Resources Home" || valuex=="Back to Year 10"  || valuex=="Up One Folder" || valuex=="Home Page" || valuex=="Access Point for Shared Resources" || valuex=="Back")
 {
 if (classx=="inactive"){ searchbar+="<option value=\"#ui-blank\" disabled>"+valuex+"<\/option>" }
