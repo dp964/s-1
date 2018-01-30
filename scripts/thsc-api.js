@@ -39,8 +39,7 @@ function pdf4(input, root){
 var searchq=window.location.search+""
 if(searchq=="?quick"){throw("Downloading File Instead");}
 var titlex=input.innerHTML;
-// COMMENT
-var idx = "NA" // var idx=input.id;
+var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
 var tix=document.title;
 
