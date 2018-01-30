@@ -53,7 +53,7 @@ break;
 
 
 case "?login":
-window.location="https://script.google.com/macros/s/AKfycbxUmQQmSMo9QJmDrTmLOdGyKJ3y5SDpJZeC6PKGwDExP3aD7o3T/exec";
+// window.location="https://script.google.com/macros/s/AKfycbxUmQQmSMo9QJmDrTmLOdGyKJ3y5SDpJZeC6PKGwDExP3aD7o3T/exec";
 break;
 case "?view":
 var searchq=window.location.search+""
@@ -61,12 +61,9 @@ var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "NE")
 var idx=getParameterByName('id', "NE")
 var idx = idx.replace("_Y", "");
-// COMMENT
-var idx="NA"
-
 var rfx=getParameterByName('panel', "NE")	
-// var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
-// var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
+var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
+var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
 var fname=titlex.replace("Markers Notes", "HSC (Markers Notes)");
 var fname=fname.replace("Solutions", "HSC (Solutions)");
 var year=titlex.substring(0, 4);
