@@ -552,6 +552,7 @@ body #sites-page-title-header input {
 }
 #sites-chrome-header .sites-header-nav {
 	margin: 0px 45px; padding: 0px; font-size: 14px; /* border-bottom-color: rgba(0, 0, 0, 0.08); border-bottom-width: 1px; border-bottom-style: solid; */
+_margin: 0px 0px !important;
 }
 #sites-chrome-header .sites-header-nav li > a, #sites-chrome-header .sites-header-nav li > a:visited {
 font-weight: 600; text-decoration: none;
