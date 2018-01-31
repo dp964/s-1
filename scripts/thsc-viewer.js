@@ -1123,6 +1123,7 @@ document.write("<a class=\"border\" href=\""+linkx+"\">Show Worked Solutions<\/a
 }
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+alert(version)
 if(version<10){
 document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 document.write("<a id=\"texlink\" class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
