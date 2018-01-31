@@ -587,7 +587,7 @@ code {
 }
 body
 {
-background-color:#EEEEFF !important;
+/* background-color:#EEEEFF !important; */
 }
 #sites-layout-tile .sites-tile-name-content-1, #sites-layout-tile .sites-tile-name-content-2, #sites-layout-tile .sites-tile-name-content-3 
 {
