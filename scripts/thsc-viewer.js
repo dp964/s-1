@@ -63,6 +63,7 @@ var idx=getParameterByName('id', "NE")
 var idx = idx.replace("_Y", "");
 var rfx=getParameterByName('panel', "NE")	
 var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
+var downloadlink="/s/?download&id="+idx+"&title="+titlex;
 var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
 var fname=titlex.replace("Markers Notes", "HSC (Markers Notes)");
 var fname=fname.replace("Solutions", "HSC (Solutions)");
@@ -1026,9 +1027,9 @@ document.write("<span class=\"nmob\"><a class=\"border\" href=\"http://community
 }
 document.write("<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 }
-/*document.write("<a class=\"nofill\" href=\"/s/?login\" target=\"_blank\">Login/Register<\/a>&nbsp;&nbsp;");
-document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
-*/
+document.write("<a class=\"nofill\" href=\"/s/?login\" target=\"_blank\">BETA Login/Register<\/a>&nbsp;&nbsp;");
+document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">BETA Download<\/a>&nbsp;&nbsp;");
+
 if (switchx=="sdf")
 {
 	if (viewno.charAt(0)=="B"){
