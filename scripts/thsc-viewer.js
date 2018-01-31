@@ -53,7 +53,7 @@ break;
 
 
 case "?login":
-// window.location="https://script.google.com/macros/s/AKfycbxUmQQmSMo9QJmDrTmLOdGyKJ3y5SDpJZeC6PKGwDExP3aD7o3T/exec";
+window.location="https://script.google.com/macros/s/AKfycbxUmQQmSMo9QJmDrTmLOdGyKJ3y5SDpJZeC6PKGwDExP3aD7o3T/exec";
 break;
 case "?view":
 var searchq=window.location.search+""
@@ -1027,8 +1027,8 @@ document.write("<span class=\"nmob\"><a class=\"border\" href=\"http://community
 }
 document.write("<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 }
-document.write("<a class=\"nofill\" href=\"/s/?login\" target=\"_blank\">BETA Login/Register<\/a>&nbsp;&nbsp;");
-document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">BETA Download<\/a>&nbsp;&nbsp;");
+document.write("<a class=\"border\" href=\"/s/?login\" target=\"_blank\">BETA Login/Register<\/a>&nbsp;&nbsp;");
+document.write("<a class=\"border\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">BETA Download<\/a>&nbsp;&nbsp;");
 
 if (switchx=="sdf")
 {
