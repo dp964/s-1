@@ -28,7 +28,7 @@ border: 0px !important;
 
 h3 {
 	font: 600 17px/normal "XITS", sans-serif; padding: 12px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
-    border-bottom: 1px solid #c0c0c0;
+/*    border-bottom: 1px solid #c0c0c0; */
     margin-bottom: 10px;
     padding-bottom: 10px;
     white-space: nowrap;
