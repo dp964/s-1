@@ -1087,7 +1087,7 @@ var linkx="\/s\/?study="+viewno+"&id="+idx+"_s";
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
 var downloadtex = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".tex"
 var downloadlk = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".pdf"
-var ie8link = "https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf"
+var ielink = "https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf"
 }
 }
 else
@@ -1127,7 +1127,7 @@ if(version<10){
 document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 document.write("<a id=\"texlink\" class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+ie8link+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+ielink+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>");
  
 } else {
