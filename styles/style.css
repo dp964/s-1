@@ -325,8 +325,7 @@ body #sites-page-title-header {
 	text-align: center;  font-size: 12px; 
 	padding-top:5px;
 	padding-bottom:20px;
-	background-color:#EEEEFF;
-}
+	background-color:#EEEEFF !important;
 
 }
 .sites-adminfooter p {
