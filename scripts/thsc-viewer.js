@@ -1123,6 +1123,7 @@ document.write("<a class=\"border\" href=\""+linkx+"\">Show Worked Solutions<\/a
 }
 }
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
+alert(ua); alert(msie);
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
 alert(version);
 if(version<10){
