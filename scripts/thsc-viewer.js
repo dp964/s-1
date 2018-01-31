@@ -1150,7 +1150,7 @@ document.write("</body></html>");
 
 }	
 
-}
+
 break;
 
 default:
