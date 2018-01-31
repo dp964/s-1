@@ -1073,7 +1073,11 @@ background-color:rgb(255,255,255);
 margin-top:45px;
 font-size:12px;
 }
-
+.chosen-container .chosen-results li.highlighted
+{
+background-color:#0000FF;
+color:white;
+}
 .c-ItemTile .countx {
 border-radius:5px;
 -webkit-border-radius: 5px;
