@@ -46,6 +46,12 @@ h6 {
 td {
 	vertical-align: top;
 }
+#sites-adminfooter
+{
+padding-top:5px;
+padding-bottom:20px;
+background-color:#EEEEFF;
+}
 
 #sites-chrome-everything a img {
 	margin: 7px; border-radius: 2px; border: currentColor; border-image: none;
