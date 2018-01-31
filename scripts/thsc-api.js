@@ -474,7 +474,9 @@ document.getElementsByClassName("sites-layout-searchbox")[0].style.display="none
 catch (err){console.log(err)}
 
 g=document.getElementById("sites-chrome-adminfooter-container").getElementsByTagName('div')[0].innerHTML;
-
+// SITE VERSION
+var siteversion="Version 9.0" 
+g.replace("Version 8.0", siteversion)
 try
 {
  var urlw=window.location+"?uri"
