@@ -1075,8 +1075,8 @@ font-size:12px;
 }
 .chosen-container .chosen-results li.highlighted
 {
-background-color:#0000FF;
-color:white;
+background:#0000FF !important;
+color:white !important;
 }
 .c-ItemTile .countx {
 border-radius:5px;
