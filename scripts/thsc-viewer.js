@@ -1131,9 +1131,10 @@ document.write("</body></html>");
 
  
 } else {
+
 var tagsy = downloadlk.replace("https://github.com/thsconline/s/raw/gh-pages/tex/", "/s/tex/");
 tagsy = tagsx.replace("https://rawgithubusercontent.com/thsconline/s/gh-pages/tex/", "/s/tex/");
-
+document.write(tagsy)
 document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 document.write("<a id=\"texlink\" class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
@@ -1141,7 +1142,7 @@ document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe
 document.write("</body></html>");
 
 
-} }
+}}
 else {
 document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 document.write("<a id=\"texlink\" class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
