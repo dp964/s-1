@@ -385,10 +385,6 @@ thislink= anchors[i]
 valuex=thislink.innerHTML;
 hrefx=thislink.href;
 classx=thislink.className;
-// COMMMENT
-thislink.insertAdjacentHTML("<br>"+valuex+"&nbsp;&nbsp;")
-thislink.innerHTML="[View File]"
-
 
 if(classx!="" || classx=="x" || valuex=="View Sitemap" || valuex=="View Source" || valuex=="Back to Year 12 - HSC" || valuex=="Back to Year 11 - Preliminary" || valuex=="Additional Resources Home" || valuex=="Back to Year 10"  || valuex=="Up One Folder" || valuex=="Home Page" || valuex=="Access Point for Shared Resources" || valuex=="Back")
 {
