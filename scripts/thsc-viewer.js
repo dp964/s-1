@@ -1122,9 +1122,9 @@ document.write("<a class=\"border\" href=\""+linkx+"\">Show Worked Solutions<\/a
 }
 }
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-alert(ua); alert(msie)
+alert(ua); alert(msie);
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-
+alert(version);
 if(version<10){
 if(version<9){window.location=ielink;}
 else{document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
