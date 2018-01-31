@@ -20,7 +20,7 @@ border: 0px !important;
 	border-bottom-color: rgb(204, 204, 204);
 }
 #sites-chrome-everything h2 {
-	font: 600 19px/normal "XITS", sans-serif; padding: 14px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
+	font: 600 22px/bold "XITS", sans-serif; padding: 14px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
 }
 #sites-chrome-everything .sites-header-cell-buffer-wrapper h2 {
 	font: 600 24px/bold "XITS", sans-serif; padding: 14px 5px 5px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
