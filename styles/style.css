@@ -493,7 +493,10 @@ input.goog-toolbar-combo-button-input {
 #sites-searchbox-select-dropdown .goog-flat-menu-button-dropdown {
 	margin-top: 12px; position: static;
 }
-
+#contentall
+{
+min-height:486px !important;
+}
 #sites-chrome-page-wrapper {
 /*	margin: auto; */
 margin-left:50px;
