@@ -1023,7 +1023,6 @@ if(forumenabled=="forum=1")
 {
 document.write("<span class=\"nmob\"><a class=\"border\" href=\"http://community.boredofstudies.org/forumdisplay.php?f="+forumlk+"\" target=\"_blank\">Forum<\/a>&nbsp;&nbsp;</span>");
 document.write("<span class=\"nmob\"><a class=\"border\" href=\"http://community.boredofstudies.org/newthread.php?do=newthread&f="+forumlk+"\" target=\"_blank\">Ask Question / Discuss<\/a>&nbsp;&nbsp;</span>");
-
 }
 document.write("<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 }
