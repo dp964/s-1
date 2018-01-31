@@ -55,7 +55,7 @@ td {
 }
 
 #sites-chrome-everything {
-	color: rgb(97, 97, 97); line-height: 1.5; padding-top: 0px; padding-bottom: 20px; font-family: "XITS",sans-serif;
+	color: rgb(97, 97, 97); line-height: 1.5; padding-top: 0px; /* padding-bottom: 20px; */ font-family: "XITS",sans-serif;
 }
 @font-face {
     font-family: XITS;
