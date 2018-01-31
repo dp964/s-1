@@ -1123,17 +1123,9 @@ document.write("<a class=\"border\" href=\""+linkx+"\">Show Worked Solutions<\/a
 }
 }
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-alert(ua); alert(msie);
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-alert(version);
 if(version<10){
-if(version<9){window.location=ielink;}
-else{document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
-document.write("<a id=\"texlink\" class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
-document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+ievernine+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</body></html>");
-}
+window.location=ievernine;
 } else {
 
 document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
@@ -1141,11 +1133,6 @@ document.write("<a id=\"texlink\" class=\"border\" href=\""+downloadtex+"\" targ
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+tagsx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>");
-
-
-
-
-
 }}
 else {
 document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
