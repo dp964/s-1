@@ -1087,7 +1087,7 @@ var linkx="\/s\/?study="+viewno+"&id="+idx+"_s";
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
 var downloadtex = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".tex"
 var downloadlk = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".pdf"
-var ie8link = "/s/tex/"+viewnox+"/"+oid+".pdf"
+var ie8link = "https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf"
 }
 }
 else
