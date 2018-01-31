@@ -133,7 +133,6 @@ text-transform: none !important;
 a.border:link, a.border:visited, table .folder-path-folder a.border:link, table .folder-path-folder a.border:visited
 {
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
-border:solid 1px rgb(231,231,231) !important;
 padding-left:1px;
 padding-right:1px;
 } 
@@ -1260,8 +1259,10 @@ a.border, a.border:link, a.border:visited, span a.border, span a.border:link, sp
 {
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px !important; 
 
-background-color:#4444FF!important;
-background:#4444FF!important;
+/*background-color:#4444FF!important;
+background:#4444FF!important;*/
+background-color:#0000FF !important;
+background:#0000FF !important;
 color:#FFFFFF !important;
 } 
 
