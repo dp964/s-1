@@ -1,18 +1,18 @@
-(function() {
-	var viewlk="NE";
+
+	var viewlkq
 function writefile(myobject)
 {
 var idxa=myobject.fileref;
-var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
-document.addEventListener("load", init(), false);
+var viewlkq="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
+document.addEventListener("load", init(viewlkq), false);
 
 
     }
 	function init()
 {
-	document.getElementById("mediaplayer").src=viewlk;
+	document.getElementById("mediaplayer").src=viewlkq;
 }
-})(); 
+
 
 function loadx()
 {
