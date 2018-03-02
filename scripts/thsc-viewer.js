@@ -1,5 +1,5 @@
 
-	var viewlkq
+	var viewlkq="a"
 function writefile(myobject)
 {
 var idxq=myobject.fileref;
