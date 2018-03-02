@@ -1,7 +1,7 @@
 function writefile(myobject)
 {
 var idx=myobject.fileref;
-body.addEventListener("load", init(idx), false);
+document.addEventListener("load", init(idx), false);
 }
 function init(a)
 {
