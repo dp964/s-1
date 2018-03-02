@@ -2,8 +2,8 @@
 	var viewlkq
 function writefile(myobject)
 {
-var idxa=myobject.fileref;
-var viewlkq="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
+var idxq=myobject.fileref;
+var viewlkq="https:\/\/drive.google.com\/file\/d\/"+idxq+"\/preview";
 document.addEventListener("load", init(viewlkq), false);
 
 
