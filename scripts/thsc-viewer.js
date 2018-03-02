@@ -1,16 +1,15 @@
 
-	var viewlkq="a"
+
 function writefile(myobject)
 {
 var idxq=myobject.fileref;
 var viewlkq="https:\/\/drive.google.com\/file\/d\/"+idxq+"\/preview";
-document.addEventListener("load", init(viewlkq), false);
-
+document.addEventListener("load",function (e) {init(e,viewlkq)},true);
 
     }
-	function init()
+	function init(a,b)
 {
-	document.getElementById("mediaplayer").src=viewlkq;
+	document.getElementById("mediaplayer").src=b;
 }
 
 
