@@ -4,14 +4,19 @@ function writefile(myobject)
 {
 var idxq=myobject.fileref;
 var viewlkq="https:\/\/drive.google.com\/file\/d\/"+idxq+"\/preview";
-window.addEventListener("load",function (e) {init(e,viewlkq)},false);
+alert(viewlkq)
+
+// window.addEventListener("load",function (e) {init(e,viewlkq)},false);
 
     }
 	function init(a,b)
 {
-	document.getElementById("mediaplayer").src=b;
+	try
+	{document.getElementById("mediaplayer").src=b;
 	document.getElementById("mediaplayer").id="loaded"
-}
+	}
+	catch(err){}
+	}
 
 
 function loadx()
