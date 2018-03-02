@@ -1,3 +1,12 @@
+function writefile(myobject)
+{
+var idx=myObj.fileref;
+body.addEventListener("load", init(idx), false);
+}
+function init(a)
+{
+	document.getElementById("mediaplayer").src=a;
+}
 function loadx()
 {
 var searchq=window.location.search+""
@@ -749,6 +758,10 @@ var forumlk="14"
 break;
 case "5348":
 var tix="HSC Maths Ext 2 Trial Papers";
+var fieldname = name + " 4U Trials";
+fieldname=fieldname.replace("w. sol 4U Trials", "4U Trials & Solutions");
+fieldname=fieldname+".pdf";
+idx=name.replace(" ", "");
 var tags="/s/yr12/Maths/trialpapers_extension2.html#"+idx;
 var maths="maths=1";
 var forumenabled="forum=1";
@@ -997,7 +1010,7 @@ document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=
 document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
 document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
-document.write("<\/head>");
+document.write("<script src=\"/s/scripts/thsc-viewer.js" type="text/javascript\"></script><\/head>");
 document.write("<body>");
 document.write("<span class=\"overlaybar\" style=\"width:100%;background-color:#7777FF;color:white !important;z-index:1000px;position:absolute;top:0px;padding-top:3px;padding-bottom:3px;\">");
 document.write("<span class=\"overlayinsert folder-path-element\">");
@@ -1138,7 +1151,7 @@ document.write("<a id=\"pdflink\" class=\"border\" href=\""+downloadlk+"\" targe
 document.write("<a id=\"texlink\" class=\"border\" href=\""+downloadtex+"\" target=\"_blank\">Download TEX<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+tagsx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</body></html>");
+document.write("<script type=\"application/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyJrYMxCo4fdrF3QHfFulwNC8gNBINlNA1ScArJ0A8QHqDZnEk\/exec?field="+fieldname+"&prefix=writefile\	"></script></body></html>");
 
 
 }	
