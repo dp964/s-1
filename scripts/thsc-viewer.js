@@ -758,10 +758,9 @@ var forumlk="14"
 break;
 case "5348":
 var tix="HSC Maths Ext 2 Trial Papers";
-var fieldname = titlex + " 4U Trials";
-fieldname=fieldname.replace("w. sol 4U Trials", "4U Trials & Solutions");
-fieldname=fieldname+".pdf";
-idx=name.replace(" ", "");
+var fieldname = titlex + " 4U Trials.pdf";
+fieldname=fieldname.replace("w. sol 4U Trials", "4U Trials &amp; Solutions");
+idx=titlex.replace(" ", "");
 var tags="/s/yr12/Maths/trialpapers_extension2.html#"+idx;
 var maths="maths=1";
 var forumenabled="forum=1";
