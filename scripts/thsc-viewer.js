@@ -4,7 +4,7 @@ function writefile(myobject)
 {
 var idxq=myobject.fileref;
 var viewlkq="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
-window.addEventListener("load",function (e) {init(e,viewlkq)},false);
+document.addEventListener("load",function (e) {init(e,viewlkq)},false);
 
     }
 	function init(a,b)
