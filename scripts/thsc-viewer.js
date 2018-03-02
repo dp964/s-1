@@ -1,12 +1,19 @@
+(function() {
+	var viewlk="NE";
 function writefile(myobject)
 {
-var idx=myobject.fileref;
-document.addEventListener("load", init(idx), false);
-}
-function init(a)
+var idxa=myobject.fileref;
+var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
+document.addEventListener("load", init(), false);
+
+
+    }
+	function init()
 {
-	document.getElementById("mediaplayer").src=a;
+	document.getElementById("mediaplayer").src=viewlk;
 }
+})(); 
+
 function loadx()
 {
 var searchq=window.location.search+""
