@@ -3,7 +3,7 @@
 function writefile(myobject)
 {
 var idxq=myobject.fileref;
-var viewlkq="https:\/\/drive.google.com\/file\/d\/"+idxq+"\/preview";
+var viewlkq="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
 alert(viewlkq)
 
 // window.addEventListener("load",function (e) {init(e,viewlkq)},false);
