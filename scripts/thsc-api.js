@@ -53,7 +53,9 @@ return true;
 }}
 try
 {
-window.location="/s/index.html?view="+root+"&id="+idx+"&n="+titlex+""
+window.location="/s/index.html?view="+root+"&n="+titlex+""
+
+//window.location="/s/index.html?view="+root+"&id="+idx+"&n="+titlex+""
 }
 catch (err)
 {
