@@ -1057,7 +1057,7 @@ else
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 }
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+viewlk+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("<script type=\"application/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyJrYMxCo4fdrF3QHfFulwNC8gNBINlNA1ScArJ0A8QHqDZnEk\/exec?field="+fieldname+"&prefix=writefile\"></script></body></html>"); 
+document.write("<script type=\"application/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyJrYMxCo4fdrF3QHfFulwNC8gNBINlNA1ScArJ0A8QHqDZnEk\/exec?field="+titlex+"&base="+viewnox+"&prefix=writefile\"></script></body></html>"); 
 break;
 
 case "?study":
