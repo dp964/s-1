@@ -1056,6 +1056,9 @@ else
 {
 document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 }
+
+
+var viewlk="https:\/\/drive.google.com\/file\/d\/1QLU8Rfy7Lk_vO0HiRSQSVSBM3oAgCncq\/preview"; // temp line
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+viewlk+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("<script type=\"application/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyJrYMxCo4fdrF3QHfFulwNC8gNBINlNA1ScArJ0A8QHqDZnEk\/exec?field="+titlex+"&base="+viewnox+"&prefix=writefile\"></script></body></html>"); 
 break;
