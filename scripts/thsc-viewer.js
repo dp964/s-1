@@ -4,7 +4,7 @@ function writefile(myobject)
 {
 var idxq=myobject.fileref;
 var b="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
-setTimeout(function(){document.getElementById("mediaplayer").src=b; document.getElementById("mediaplayer").id="medialoaded"}, 100)
+setTimeout(function(){document.getElementById("mediaplayer").src=b; document.getElementById("mediaplayer").id="medialoaded"}, 4)
 
     }
 
@@ -763,6 +763,7 @@ var tix="HSC Maths Ext 2 Trial Papers";
 var fieldname = titlex + " 4U Trials.pdf";
 fieldname=fieldname.replace("w. sol 4U Trials", "4U Trials &amp; Solutions");
 idx=titlex.replace(" ", "");
+idx=idx.replace("w. sol", "");
 var tags="/s/yr12/Maths/trialpapers_extension2.html#"+idx;
 var maths="maths=1";
 var forumenabled="forum=1";
