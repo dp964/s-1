@@ -69,15 +69,16 @@ break;
 case "?view":
 var searchq=window.location.search+""
 var viewno=getParameterByName('view', "0000")
-var titlex=getParameterByName('n', "NE")
-var idx=getParameterByName('id', "NE")
-var idx = idx.replace("_Y", "");
+var titlex=getParameterByName('n', "Error: File Not Specified")
+idx=titlex.replace(" ", "");
+idx=idx.replace("w. sol", "");
 var rfx=getParameterByName('panel', "NE")	
 var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
 var downloadlink="/s/?download&id="+idx+"&title="+titlex;
 var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
 var fname=titlex.replace("Markers Notes", "HSC (Markers Notes)");
 var fname=fname.replace("Solutions", "HSC (Solutions)");
+
 var year=titlex.substring(0, 4);
 var root=titlex.substr(5).toLowerCase();
 var hfolder="HSC Questions"
@@ -760,10 +761,6 @@ var forumlk="14"
 break;
 case "5348":
 var tix="HSC Maths Ext 2 Trial Papers";
-var fieldname = titlex + " 4U Trials.pdf";
-fieldname=fieldname.replace("w. sol 4U Trials", "4U Trials &amp; Solutions");
-idx=titlex.replace(" ", "");
-idx=idx.replace("w. sol", "");
 var tags="/s/yr12/Maths/trialpapers_extension2.html#"+idx;
 var maths="maths=1";
 var forumenabled="forum=1";
