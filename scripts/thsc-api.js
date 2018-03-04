@@ -386,6 +386,7 @@ oput+="<span class=\"indent\">"
 thislink= anchors[i]
 valuex=thislink.innerHTML;
 hrefx=thislink.href;
+vn=thislink.id.split("_")[0];
 classx=thislink.className;
 
 if(classx!="" || classx=="x" || valuex=="View Sitemap" || valuex=="View Source" || valuex=="Back to Year 12 - HSC" || valuex=="Back to Year 11 - Preliminary" || valuex=="Additional Resources Home" || valuex=="Back to Year 10"  || valuex=="Up One Folder" || valuex=="Home Page" || valuex=="Access Point for Shared Resources" || valuex=="Back")
@@ -410,7 +411,6 @@ if (queryz=="w.%20sol")
 {
 thislink.href="#"+thislink.id;
 thislink.onClick="return false;"
-
 thislink.className="inactive"
 }
 
@@ -418,7 +418,9 @@ thislink.className="inactive"
 }
 else
 {
-searchbar+="<option value='"+hrefx+"'>"+valuex+"<\/option>"
+newhref="/s/?view="+vn+"&n="+valuex;
+thislink.href=newhref;
+searchbar+="<option value='"+newhref+"'>"+valuex+"<\/option>"
 oput+="<a href='"+hrefx+"'>"+valuex+"<\/a><br>";
 }
 
