@@ -70,8 +70,7 @@ case "?view":
 var searchq=window.location.search+""
 var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "Error: File Not Specified")
-idx=titlex.replace(" ", "");
-idx=idx.replace("w. sol", "");
+
 var rfx=getParameterByName('panel', "NE")	
 var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
 var downloadlink="/s/?download&id="+idx+"&title="+titlex;
@@ -92,6 +91,9 @@ else
 {
 if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="sdf"; } else {var switchx="no"; var viewnox=viewno;}
 }
+
+idx=titlex.replace(" ", "");
+idx=viewnox+"_"+idx.replace("w. sol", "");
 switch(viewnox)
 {
 case "yr09":
