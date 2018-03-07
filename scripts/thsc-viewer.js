@@ -91,7 +91,7 @@ else
 {
 if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="sdf"; } else {var switchx="no"; var viewnox=viewno;}
 }
-idx=titlex.replace(\ \g, "");
+idx=titlex.replace(/ /g, "");
 idx=viewnox+"_"+idx.replace("w. sol", "");
 switch(viewnox)
 {
