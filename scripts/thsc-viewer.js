@@ -72,9 +72,9 @@ var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "Error: File Not Specified")
 
 var rfx=getParameterByName('panel', "NE")	
-var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
-var downloadlink="/s/?download&id="+idx+"&title="+titlex;
-var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
+// var downloadlk="https:\/\/drive.google.com\/uc?export=download&id="+idx;
+// var downloadlink="/s/?download&id="+idx+"&title="+titlex;
+// var viewlk="https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview";
 var fname=titlex.replace("Markers Notes", "HSC (Markers Notes)");
 var fname=fname.replace("Solutions", "HSC (Solutions)");
 
@@ -85,14 +85,13 @@ if (root=="solutions" || root=="solution"){var hfolder="HSC Solutions"}
 if (root=="solutions%20-%20markers%20notes" || root=="solutions - markers notes" || root=="markers%20notes" || root=="markers notes"){var hfolder="HSC Solutions - Markers Notes"}
 var maths="maths=0";
 var forumenabled="forum=0";
-var idx
+var idx="NE";
 if (viewno.charAt(0)=="f"){viewnox=viewno.substr(1); var switchx="yes"; }
 else
 {
 if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="sdf"; } else {var switchx="no"; var viewnox=viewno;}
 }
-
-idx=titlex.replace(" ", "");
+idx=titlex.replace(\ \g, "");
 idx=viewnox+"_"+idx.replace("w. sol", "");
 switch(viewnox)
 {
