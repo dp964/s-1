@@ -4,7 +4,7 @@ function writefile(myobject)
 {
 var idxq=myobject.fileref;
 var b="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
-setTimeout(function(){document.getElementById("mediaplayer").src=b; document.getElementById("mediaplayer").id="medialoaded"}, 2000)
+setTimeout(function(){document.getElementById("mediaplayer").src=b; document.getElementById("mediaplayer").id="medialoaded"}, 1)
 
     }
 
@@ -1036,7 +1036,7 @@ document.write("<span class=\"nmob\"><a class=\"border\" href=\"\/s\/resources\/
 if(forumenabled=="forum=1")
 {
 document.write("<span class=\"nmob\"><a class=\"border\" href=\"http://community.boredofstudies.org/forumdisplay.php?f="+forumlk+"\" target=\"_blank\">Forum<\/a>&nbsp;&nbsp;</span>");
-document.write("<span class=\"nmob\"><a class=\"border\" href=\"http://community.boredofstudies.org/newthread.php?do=newthread&f="+forumlk+"\" target=\"_blank\">Ask Question / Discuss<\/a>&nbsp;&nbsp;</span>");
+// document.write("<span class=\"nmob\"><a class=\"border\" href=\"http://community.boredofstudies.org/newthread.php?do=newthread&f="+forumlk+"\" target=\"_blank\">Ask Question / Discuss<\/a>&nbsp;&nbsp;</span>");
 }
 // document.write("<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 }
@@ -1053,7 +1053,7 @@ document.write("<a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">
 }
 else
 {
-document.write("&nbsp;&nbsp;<a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("<!--&nbsp;&nbsp;--><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 }
 
 
