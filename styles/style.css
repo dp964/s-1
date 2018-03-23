@@ -1324,7 +1324,7 @@ background-color:#999999;
 
 
 /* The Overlay (background) */
-.overlay {
+.poverlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */    
     height: 100%;
     width: 0;
@@ -1339,7 +1339,7 @@ background-color:#999999;
 }
 
 /* Position the content inside the overlay */
-.overlay-content {
+.poverlay-content {
     position: relative;
     top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
@@ -1348,7 +1348,7 @@ background-color:#999999;
 }
 
 /* The navigation links inside the overlay */
-.overlay a {
+.poverlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -1356,13 +1356,9 @@ background-color:#999999;
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
 
 /* Position the close button (top right corner) */
-.overlay .closebtn {
+.poverlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -1371,8 +1367,7 @@ background-color:#999999;
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
+       .poverlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
