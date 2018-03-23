@@ -4,13 +4,13 @@ function writefile(myobject)
 {
 var idxq=myobject.fileref;
 var b="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
-var downloadlink="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
+var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 
 
-setTimeout(function(){document.getElementById("downloadlk").innerHTML="<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 1)
+setTimeout(function(){document.getElementById("downloadlk").innerHTML="<a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 1)
     }
 
 
