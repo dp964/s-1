@@ -9,8 +9,8 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 var titlex=getParameterByName('n');
-fbox="<a class=\"border\" style=\"float:right;\" href=\"#ui-blank\" onClick=\"closefbox()\">Close &#215;</a><div class=\"poverlay-content\">"
-fbox="<b>"+titlex+"</b><a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
+fbox="<a class=\"border closebtn\" style=\"position:fixed; top: 34px;right: 55px;\" href=\"#ui-blank\" onClick=\"closefbox()\">Close &#215;</a><div class=\"poverlay-content\">"
+fbox="<h4>"+titlex+"</h4><a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
 
 
 
@@ -20,7 +20,7 @@ setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; docum
 function test()
 {
 
-	document.getElementById("figurebox").style.width = "300px";
+	document.getElementById("figurebox").style.width = "295px";
 	document.getElementById("figurebox").style.height = "400px";
 	
 	
