@@ -9,10 +9,27 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 
+fbox="<a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"closefbox()\">&times;</a>"
+fbox="<div class=\"overlay-content\"><a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
 
-setTimeout(function(){document.getElementById("downloadlk").innerHTML="<a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 1)
+
+
+
+setTimeout(function(){document.getElementById("figurebox").innerHTML=g;document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"test()\" href=\"#\">Experimential </a><a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 2)
     }
+function test()
+{
 
+	document.getElementById("figurebox").style.height = "100%";
+	
+	
+	
+}
+
+function closefbox()
+{
+	document.getElementById("myNav").style.height = "0%";
+}
 
 function loadx()
 {
@@ -1016,7 +1033,7 @@ document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"
 document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 // document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<script src=\"/s/scripts/thsc-viewer.js\" type=\"text/javascript\"></script><\/head>");
-document.write("<body>");
+document.write("<body><div id=\"figurebox\" class=\"poverlay\"></div>");
 document.write("<span class=\"overlaybar\" style=\"width:100%;background-color:#7777FF;color:white !important;z-index:1000px;position:absolute;top:0px;padding-top:3px;padding-bottom:3px;\">");
 document.write("<span class=\"overlayinsert folder-path-element\">");
 if (switchx=="sdf")
@@ -1127,7 +1144,7 @@ document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"
 document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 7]><style> #mediaplayer{display:none;}</style><![endif]-->");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<\/head>");
-document.write("<body>");
+document.write("<body><div id=\"figurebox\"></div>");
 document.write("<span class=\"overlaybar\" style=\"width:100%;background-color:#7777FF;color:white !important;z-index:1000px;position:absolute;top:0px;padding-top:3px;padding-bottom:3px;\">");
 document.write("<span class=\"overlayinsert folder-path-element\">");
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+topic+idx);
