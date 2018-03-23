@@ -1349,11 +1349,6 @@ background-color:#999999;
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-/* The navigation links inside the overlay */
-.poverlay a {
-    display: block; /* Display block instead of inline */
-}
-
 
 /* Position the close button (top right corner) */
 .poverlay .closebtn {
