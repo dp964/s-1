@@ -1336,6 +1336,8 @@ background-color:#999999;
     background-color: rgb(248,248,248); /* Black fallback color */
     background-color: rgba(248,248,248, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable horizontal scroll */
+
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px !important; 
 }

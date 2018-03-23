@@ -9,7 +9,7 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 var titlex=getParameterByName('n');
-fbox="<span style=\"float:right;\"><a class=\"border\" href=\"#ui-blank\" onclick=\"closefbox()\">Close &#215;</a></span><div class=\"overlay-content\">"
+fbox="<a class=\"border\" style=\"float:right;\" href=\"#ui-blank\" onClick=\"closefbox()\">Close &#215;</a><div class=\"poverlay-content\">"
 fbox="<b>"+titlex+"</b><a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
 
 
