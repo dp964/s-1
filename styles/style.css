@@ -1332,6 +1332,7 @@ background-color:#999999;
     z-index: 2; /* Sit on top */
     top: 31px;
     right: 33px;
+    padding: 9px;
     background-color: rgb(248,248,248); /* Black fallback color */
     background-color: rgba(248,248,248, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -1350,8 +1351,6 @@ background-color:#999999;
 
 /* The navigation links inside the overlay */
 .poverlay a {
-    padding: 8px;
-    text-decoration: none;
     display: block; /* Display block instead of inline */
 }
 
