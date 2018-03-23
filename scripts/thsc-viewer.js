@@ -9,8 +9,8 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 
-fbox="<a href=\"#ui-blank\" class=\"border closebtn \" onclick=\"closefbox()\">Close &#215;</a>"
-fbox="<div class=\"overlay-content\"><a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
+fbox="<div class=\"overlay-content\"><a href=\"#ui-blank\" class=\"border closebtn \" onclick=\"closefbox()\">Close &#215;</a>"
+fbox="<a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
 
 
 
