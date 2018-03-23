@@ -7,9 +7,8 @@ var b="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
 var downloadlink="https:\/\/drive.google.com\/uc?export=download&id="+idx;
 
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
-document.getElementById("downloadlk").innerHTML="<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
-
+setTimeout(function(){document.getElementById("downloadlk").innerHTML="<a class=\"border\" href=\""+downloadlk+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 2)
     }
 
 
