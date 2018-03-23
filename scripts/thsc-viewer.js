@@ -20,7 +20,9 @@ setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; docum
 function test()
 {
 
-	document.getElementById("figurebox").style.width = "100%";
+	document.getElementById("figurebox").style.width = "300px";
+	document.getElementById("figurebox").style.height = "400px";
+	
 	
 	
 	
@@ -28,7 +30,9 @@ function test()
 
 function closefbox()
 {
-	document.getElementById("myNav").style.width = "0";
+	document.getElementById("figurebox").style.width = "0px";
+	document.getElementById("figurebox").style.height = "0px";
+	
 }
 
 function loadx()
