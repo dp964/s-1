@@ -9,7 +9,7 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 
-fbox="<a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"closefbox()\">&times;</a>"
+fbox="<a href=\"javascript:void(0)\" class=\"closebtn border\" onclick=\"closefbox()\">Close &#215;</a>"
 fbox="<div class=\"overlay-content\"><a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
 
 
@@ -20,7 +20,7 @@ setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; docum
 function test()
 {
 
-	document.getElementById("figurebox").style.height = "100%";
+	document.getElementById("figurebox").style.width = "100%";
 	
 	
 	
@@ -28,7 +28,7 @@ function test()
 
 function closefbox()
 {
-	document.getElementById("myNav").style.height = "0%";
+	document.getElementById("myNav").style.width = "0";
 }
 
 function loadx()
