@@ -15,7 +15,7 @@ fbox="<div class=\"overlay-content\"><a href=\"#\">test link 1</a><a href=\"#\">
 
 
 
-setTimeout(function(){document.getElementById("figurebox").innerHTML=g;document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"test()\" href=\"#\">Experimential </a><a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 2)
+setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"test()\" href=\"#\">Experimential </a><a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 2)
     }
 function test()
 {
