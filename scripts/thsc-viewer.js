@@ -9,13 +9,13 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 var titlex=getParameterByName('n');
-fbox="<a class=\"border closebtn\" style=\"position:fixed; top: 34px;right: 55px;\" href=\"#ui-blank\" onClick=\"closefbox()\">Close &#215;</a><div class=\"poverlay-content\">"
-fbox="<h4>"+titlex+"</h4><a href=\"#\">test link 1</a><a href=\"#\">test link 2</a><a href=\"#\">test link 3</a></div>"
+fbox="<a class=\"border\" style=\"position:fixed; top: 34px;right: 55px;\" href=\"#ui-blank\" onClick=\"closefbox()\">Close &#215;</a><div class=\"poverlay-content\">"
+fbox="<h4>"+titlex+"</h4><a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><a href=\"#\">test link 2</a><br><a href=\"#\">test link 3</a><br></div><a href=\"#\">Close</a><br></div>"
 
 
 
 
-setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"test()\" href=\"#ui-blank\">Experimential</a>&nbsp; <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;"}, 2)
+setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"test()\" href=\"#ui-blank\">Info/Options</a>&nbsp;&nbsp;"}, 2)
     }
 function test()
 {
