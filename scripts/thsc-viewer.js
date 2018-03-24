@@ -19,9 +19,9 @@ setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; docum
     }
 function showfbox()
 {
-if (document.getElementById("figurebox").style.width != "295px")
+if (document.getElementById("figurebox").style.width == "24px")
 {
-	document.getElementById("figurebox").style.width = "295px";
+	document.getElementById("figurebox").style.width = "20%";
 	document.getElementById("figurebox").style.height = "400px";
 }
 	else
