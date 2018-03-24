@@ -9,7 +9,7 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 var titlex=getParameterByName('n');
-fbox="<a class=\"border\" style=\"position:fixed; top: 34px;right: 55px;\" href=\"#ui-blank\" onClick=\"closefbox()\">Close &#215;</a><div class=\"poverlay-content\">"
+fbox="<div class=\"poverlay-content\">"
 fbox="<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"closefbox()\" href=\"#\">Close</a><br></div>"
 
 
@@ -1037,7 +1037,7 @@ document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"
 document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 // document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<script src=\"/s/scripts/thsc-viewer.js\" type=\"text/javascript\"></script><\/head>");
-document.write("<body><div id=\"figurebox\" onclick=\"showfbox()\" onmouseon=\"showfbox()\" class=\"poverlay\"></div>");
+document.write("<body><div id=\"figurebox\" onclick=\"showfbox()\" class=\"poverlay\"></div>");
 document.write("<span class=\"overlaybar\" style=\"width:100%;background-color:#7777FF;color:white !important;z-index:1000px;position:absolute;top:0px;padding-top:3px;padding-bottom:3px;\">");
 document.write("<span class=\"overlayinsert folder-path-element\">");
 if (switchx=="sdf")
