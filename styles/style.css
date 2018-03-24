@@ -1346,8 +1346,8 @@ background:none;
 
 /* Position the content inside the overlay */
 .poverlay-content {
-    background-color: rgb(200,200,248); /* Black fallback color */
-    background-color: rgba(200,200,248, 0.97); /* Black w/opacity */
+    background: rgb(200,200,248) !important; /* Black fallback color */
+    background: rgba(200,200,248, 0.97) !important; /* Black w/opacity */
     position: relative;
     top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
