@@ -1337,9 +1337,7 @@ right:3%;
    right: calc(2% + 10px);
 padding-top:20px;
 padding-left:20px;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.97); /* Black w/opacity */
-color:#FFFFFF
+background:none;
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: hidden; /* Disable horizontal scroll */
 
@@ -1348,6 +1346,8 @@ color:#FFFFFF
 
 /* Position the content inside the overlay */
 .poverlay-content {
+    background-color: rgb(200,200,248); /* Black fallback color */
+    background-color: rgba(200,200,248, 0.97); /* Black w/opacity */
     position: relative;
     top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
