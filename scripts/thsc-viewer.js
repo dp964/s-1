@@ -1037,7 +1037,7 @@ document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"
 document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 // document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<script src=\"/s/scripts/thsc-viewer.js\" type=\"text/javascript\"></script><\/head>");
-document.write("<body><div id=\"figurebox\" onclick=\"showfbox()\" onmouseout=\"hidefbox()\"class=\"poverlay\"></div>");
+document.write("<body><div id=\"figurebox\" onclick=\"showfbox()\" onmousein=\"showfbox()\" onmouseout=\"hidefbox()\"class=\"poverlay\"></div>");
 document.write("<span class=\"overlaybar\" style=\"width:100%;background-color:#7777FF;color:white !important;z-index:1000px;position:absolute;top:0px;padding-top:3px;padding-bottom:3px;\">");
 document.write("<span class=\"overlayinsert folder-path-element\">");
 if (switchx=="sdf")
