@@ -1368,14 +1368,15 @@ border:0px;
 @media screen and (min-height: 1025px) {
 
        .poverlay {
-    right: 40px;
+    right: 40px !important;
     }
 }
 
 @media screen and (max-height: 425px) {
 
        .poverlay {
-    right: 3.5%
+    position: relative;
+    right: 3.5% !important;
     }
 }
 
