@@ -1365,16 +1365,16 @@ border:0px;
     font-size: 60px;
 }
 
-@media screen and (min-height: 1024px) {
+@media screen and (min-height: 1025px) {
 
-       .poverlay .closebtn {
-    right: 2%
+       .poverlay {
+    right: 40px;
     }
 }
 
 @media screen and (max-height: 425px) {
 
-       .poverlay .closebtn {
+       .poverlay {
     right: 3.5%
     }
 }
