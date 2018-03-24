@@ -19,19 +19,23 @@ setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; docum
     }
 function showfbox()
 {
-
+if (document.getElementById("figurebox").style.width == "295px")
+{
 	document.getElementById("figurebox").style.width = "295px";
 	document.getElementById("figurebox").style.height = "400px";
-	
-	
+}
+	else
+	{
+		document.getElementById("figurebox").style.width = "24px";
+	document.getElementById("figurebox").style.height = "24px";	
+	}
 	
 	
 }
 
 function hidefbox()
 {
-	document.getElementById("figurebox").style.width = "24px";
-	document.getElementById("figurebox").style.height = "24px";
+
 	
 }
 
