@@ -1333,9 +1333,9 @@ min-height:24px;
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
     top: 36px;
-    right: 2.5%;
-padding-top:24px;
-padding-left:24px;
+    right: 3%;
+padding-top:20px;
+padding-left:20px;
     background-color: rgb(248,248,248); /* Black fallback color */
     background-color: rgba(248,248,248, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -1363,6 +1363,13 @@ border:0px;
     top: 20px;
     right: 45px;
     font-size: 60px;
+}
+
+@media screen and (min-height: 1024px) {
+
+       .poverlay .closebtn {
+    right: 2.5%;
+    }
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
