@@ -10,7 +10,7 @@ setTimeout(function(){document.getElementById("mediaplayer").src=b;
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
 var titlex=getParameterByName('n');
 fbox="<div class=\"poverlay-content\">"
-fbox="<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"closefbox()\" href=\"#\">Close</a><br></div>"
+fbox="<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"hidefbox()\" href=\"#\">Close</a><br></div>"
 
 
 
