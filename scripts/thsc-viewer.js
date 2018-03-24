@@ -19,7 +19,7 @@ setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; docum
     }
 function showfbox()
 {
-if (document.getElementById("figurebox").style.width == "295px")
+if (document.getElementById("figurebox").style.width != "295px")
 {
 	document.getElementById("figurebox").style.width = "295px";
 	document.getElementById("figurebox").style.height = "400px";
