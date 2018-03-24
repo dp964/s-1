@@ -23,11 +23,13 @@ if (document.getElementById("figurebox").style.width == "24px")
 {
 	document.getElementById("figurebox").style.width = "290px";
 	document.getElementById("figurebox").style.height = "400px";
+	document.getElementById("figurebox").style.background = "rgba(200,200,248, 0.97)";
 }
 	else
 	{
 		document.getElementById("figurebox").style.width = "24px";
 	document.getElementById("figurebox").style.height = "24px";	
+		document.getElementById("figurebox").style.background = "none";
 	}
 	
 	
