@@ -125,6 +125,12 @@ if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="sdf"; } else {
 }
 idx=titlex.replace(/ /g, "");
 idx=viewnox+"_"+idx.replace(/w.sol/g, "");
+idx=idx.replace(/P1/g, "_P1");
+idx=idx.replace(/P2 (Adv.)/g, "_P2Adv");
+idx=idx.replace(/P2 (Std.)/g, "_P2Std");
+
+
+
 switch(viewnox)
 {
 case "yr09":
