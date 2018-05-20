@@ -127,8 +127,10 @@ idx=titlex.replace(/ /g, "");
 idx=viewnox+"_"+idx.replace(/w.sol/g, "");
 idx=idx.replace(/P1/g, "_P1");
 
-idx=idx.replace(/P2 (Adv.)/g, "_P2Adv");
-idx=idx.replace(/P2 (Std.)/g, "_P2Std");
+idx=idx.replace(/P2 (Adv.)/g, "_P2");
+idx=idx.replace(/P2 (Std.)/g, "_P2");
+idx=idx.replace(/P2/g, "_P2");
+
 idx=idx.replace(/PracticeExam/g, "_PracticeExam");
 
 
