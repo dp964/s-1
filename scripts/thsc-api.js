@@ -1,4 +1,3 @@
-window.location="/frenzy/?s"
 
 String.prototype.capitalize = function(){
        return this.replace( /(^|\s)([a-z])/g , function(m,p1,p2){ return p1+p2.toUpperCase(); } );
@@ -348,7 +347,12 @@ window.location=thislinkx
 
 function configure()
 {
+window.location="/frenzy/?s"
+}
 
+
+function c()
+{
 var q=window.location.search+"=z&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
