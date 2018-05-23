@@ -347,6 +347,7 @@ window.location=thislinkx
 
 function configure()
 {
+window.alert("Temp redirect in place")
 window.location="/frenzy/?s"
 }
 
