@@ -1135,18 +1135,19 @@ else
 if (idx.slice(-2)=="_s")
 {
 var newid=idx.substring(0, idx.length - 2);
-var idx=idx+" w. sol";
+var idx=newid+" w. sol";
 var linkx="\/s\/?study="+viewno+"&id="+newid;
 }
 else
 {
+var newid=idx;
 var linkx="\/s\/?study="+viewno+"&id="+idx+"_s";
 }
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
-var downloadtex = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".tex"
-var downloadlk = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".pdf"
-var ielink = "https://thsconline.github.io/tex/"+viewnox+"/"+oid+".pdf"
-var ievernine="https://docs.google.com/viewer?url=https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf";
+var downloadtex = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+newid+".tex"
+var downloadlk = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+newid+".pdf"
+var ielink = "https://thsconline.github.io/tex/"+viewnox+"/"+newid+".pdf"
+var ievernine="https://docs.google.com/viewer?url=https://thsconline.github.io/s/tex/"+viewnox+"/"+newid+".pdf";
 }
 }
 else
@@ -1156,7 +1157,7 @@ var tagsx="topics\/"+subj+"\/"+topic;
 }
 var myurl = document.location;
 document.write("<html><head>");
-document.write("<title>THSC Online - "+tix+" - "+ topic + idx+"</title>");
+document.write("<title>"+tix+" - "+ topic + idx+"</title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
