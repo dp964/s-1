@@ -441,7 +441,7 @@ var forumenabled="forum=1";
 var forumlk="34"
 break;
 case "3720":
-var tix="HSC Hospitality Papers;
+var tix="HSC Hospitality Papers";
 var tags="/s/yr12/Hospitality/index.html#"+idx;
 break;
 case "4118":
