@@ -347,13 +347,8 @@ window.location=thislinkx
 
 function configure()
 {
-window.alert("Temp redirect in place")
-window.location="/frenzy/?s"
-}
-
-
-function c()
-{
+window.alert("Opening temp copy")
+window.open("/frenzy/?s")
 var q=window.location.search+"=z&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
