@@ -1108,7 +1108,7 @@ var searchq=window.location.search+""
 var viewno=getParameterByName('study', "000")
 var viewnox = viewno.split(".")[0];
 var idx=getParameterByName('id', "index");
-var newid=idx.replace("_s", "")
+var newid=idx.substring(0, idx.length - 2);
 var oid = idx;
 switch(viewno)
 {
@@ -1132,7 +1132,7 @@ if(idx=="index" || idx=="! temp")
 }
 else
 {
-if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
+if (idx.slice(-2)=="_s")
 {
 var newid=idx.substring(0, idx.length - 2);
 var idx=idx+" w. sol";
