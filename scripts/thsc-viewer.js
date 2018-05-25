@@ -1134,7 +1134,7 @@ else
 {
 if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
-var newid=idx.substring(0, idx.length - 2)
+var newid=idx.substring(0, idx.length - 2);
 var idx=idx+" w. sol";
 var linkx="\/s\/?study="+viewno+"&id="+newid;
 }
