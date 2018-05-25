@@ -1124,7 +1124,6 @@ var tix="Maths Ext 2 - Conics";
 var subj="Maths Ext 2";
 var tags="/s/yr12/Maths/Questions%20by%20Topic/topic_conics_extension2.html#"+newid;
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
-default:
 break;
 case "534.SAMPLE":
 var tix="Maths Ext 2 - Sample Questions";
