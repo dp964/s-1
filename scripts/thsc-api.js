@@ -347,8 +347,7 @@ window.location=thislinkx
 
 function configure()
 {
-window.alert("Opening temp copy")
-window.open("/frenzy/?s")
+$( "<p>Navigate to <a href="/frenzy/?s">frenzy?s</a> for backup copy of site</p>" ).prependTo("body");
 var q=window.location.search+"=z&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
