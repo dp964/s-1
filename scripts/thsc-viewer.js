@@ -1134,9 +1134,9 @@ else
 {
 if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
-var newid=idx.replace("_s", "")
-var idx=idx.replace("_s", " w. sol");
-var linkx="\/s\/?study="+viewno+"&id="+newid;
+var newid=idx.substring(0, searchidx.length - 2)
+var idx=idx+" w. sol";
+var linkx="\/s\/?study="+viewno+"&id="+oid;
 }
 else
 {
@@ -1145,7 +1145,7 @@ var linkx="\/s\/?study="+viewno+"&id="+idx+"_s";
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
 var downloadtex = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".tex"
 var downloadlk = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".pdf"
-var ielink = "https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf"
+var ielink = "https://thsconline.github.io/tex/"+viewnox+"/"+oid+".pdf"
 var ievernine="https://docs.google.com/viewer?url=https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf";
 }
 }
