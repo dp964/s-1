@@ -441,7 +441,7 @@ var forumenabled="forum=1";
 var forumlk="34"
 break;
 case "3720":
-var tix="HSC Hospitality Papers";
+var tix="HSC Hospitality Papers;
 var tags="/s/yr12/Hospitality/index.html#"+idx;
 break;
 case "4118":
@@ -1136,7 +1136,7 @@ if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
 var newid=idx.substring(0, searchidx.length - 2)
 var idx=idx+" w. sol";
-var linkx="\/s\/?study="+viewno+"&id="+oid;
+var linkx="\/s\/?study="+viewno+"&id="+newid;
 }
 else
 {
