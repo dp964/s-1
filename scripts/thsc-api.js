@@ -347,7 +347,7 @@ window.location=thislinkx
 
 function configure()
 {
-$( "<p>Navigate to <a href=\"\/frenzy\/?s\">frenzy?s</a> for backup copy of site</p>" ).prependTo("body");
+$( "&nbsp;&nbsp;<br><p>For Year 10 and Year 11 students please proceed with caution, as the content is currently only for the old syllabus!</p>" ).prependTo("body");
 var q=window.location.search+"=z&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
