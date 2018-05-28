@@ -1108,7 +1108,14 @@ var searchq=window.location.search+""
 var viewno=getParameterByName('study', "000")
 var viewnox = viewno.split(".")[0];
 var idx=getParameterByName('id', "index");
-var newid=idx.replace("_s", "")
+if (idx.slice(-2)=="_s")
+{
+var newid=idx.substring(0, idx.length - 2);
+}
+else
+{
+var newid=idx;
+}
 var oid = idx;
 switch(viewno)
 {
@@ -1116,6 +1123,12 @@ case "534.3":
 var tix="Maths Ext 2 - Conics";
 var subj="Maths Ext 2";
 var tags="/s/yr12/Maths/Questions%20by%20Topic/topic_conics_extension2.html#"+newid;
+var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
+break;
+case "534.SAMPLE":
+var tix="Maths Ext 2 - Sample Questions";
+var subj="Maths Ext 2";
+var tags="/tex/sample.html#"+newid;
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
 default:
 break;
@@ -1132,21 +1145,22 @@ if(idx=="index" || idx=="! temp")
 }
 else
 {
-if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
+if (idx.slice(-2)=="_s")
 {
-var newid=idx.replace("_s", "")
-var idx=idx.replace("_s", " w. sol");
+var newid=idx.substring(0, idx.length - 2);
+var idx=newid+" w. sol";
 var linkx="\/s\/?study="+viewno+"&id="+newid;
 }
 else
 {
+var newid=idx;
 var linkx="\/s\/?study="+viewno+"&id="+idx+"_s";
 }
 var tagsx="https://script.google.com/macros/s/AKfycbwCD820RhO-z3t-E5KXoAUk8qkr0XLUwfgOa8rT6KlUWsWR1lQ/exec?base=thsc&serve="+viewnox+"/"+oid;
-var downloadtex = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".tex"
-var downloadlk = "https://github.com/thsconline/s/raw/gh-pages/tex/"+viewnox+"/"+oid+".pdf"
-var ielink = "https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf"
-var ievernine="https://docs.google.com/viewer?url=https://thsconline.github.io/s/tex/"+viewnox+"/"+oid+".pdf";
+var downloadtex = "https://github.com/thsconline/tex/raw/gh-pages/"+viewnox+"/"+newid+".tex"
+var downloadlk = "https://github.com/thsconline/tex/raw/gh-pages/"+viewnox+"/"+newid+".pdf"
+var ielink = "https://thsconline.github.io/tex/"+viewnox+"/"+newid+".pdf"
+var ievernine="https://docs.google.com/viewer?url=https://thsconline.github.io/tex/"+viewnox+"/"+newid+".pdf";
 }
 }
 else
@@ -1156,7 +1170,7 @@ var tagsx="topics\/"+subj+"\/"+topic;
 }
 var myurl = document.location;
 document.write("<html><head>");
-document.write("<title>THSC Online - "+tix+" - "+ topic + idx+"</title>");
+document.write("<title>"+tix+" - "+ topic + idx+"</title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
