@@ -1,41 +1,7 @@
-
 String.prototype.capitalize = function(){
        return this.replace( /(^|\s)([a-z])/g , function(m,p1,p2){ return p1+p2.toUpperCase(); } );
       }
-function filev(input){
-var searchq=window.location.search+""
-if(searchq=="?quick"){throw("Downloading File Instead");}
-var titlex=input.innerHTML;
-var idx=input.id;
-var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
-var tix=document.title || "Additional Resources" ;
 
-var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE9 - Open file in new window")
-return true;
-}}
-
-var myurl = document.location;
-document.write("<html><head>");
-document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
-document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
-document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
-document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
-document.write("<\/head>");
-document.write("<body>");
-document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
-document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex);
-document.write("<span style=\"float:right;\">");
-document.write("<a class=\"nofill\" href=\"https://thsconline.github.io/s/"+idx+".html\" target=\"_blank\">Open in New Window<\/a>&nbsp;&nbsp;");
-document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https://thsconline.github.io/s/"+idx+".html\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</body></html>"); 
-}
 function pdf4(input, root){
 var searchq=window.location.search+""
 if(searchq=="?quick"){throw("Downloading File Instead");}
@@ -82,90 +48,6 @@ document.write("</body></html>");
 
 }
 
-function pdf4A(input, root){
-var searchq=window.location.search+""
-if(searchq=="?quick"){throw("Downloading File Instead");}
-var titlex=input.innerHTML;
-var idx=input.id;
-var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
-var tix=document.title;
-var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE9 - Attempt to Download File directly")
-return true;
-
-
-}}
-try
-{
-window.location="/s/?view="+root+"&id="+idx+"&n="+titlex+"&panel=1"
-}
-catch (err)
-{
-var myurl = document.location;
-document.write("<html><head>");
-document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
-document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
-document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
-document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script><style>");
-document.write("<\/head>");
-document.write("<body>");
-document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
-document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex);
-document.write("<span style=\"float:right;\">");
-document.write("<!--<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;-->");
-document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</body></html>"); 
-}
-
-}
-function pdf4B(input, root){
-var searchq=window.location.search+""
-if(searchq=="?quick"){throw("Downloading File Instead");}
-var titlex=input.innerHTML;
-var idx=input.id;
-var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
-var tix=document.title;
-var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE9 - Attempt to Download File directly")
-return true;
-
-
-}}
-try
-{
-window.location="/s/?view="+root+"&id="+idx+"&n="+titlex+"&panel=2"
-}
-catch (err)
-{
-var myurl = document.location;
-document.write("<html><head>");
-document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
-document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
-document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
-document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script><style>");
-document.write("<\/head>");
-document.write("<body>");
-document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
-document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex);
-document.write("<span style=\"float:right;\">");
-document.write("<!--<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;-->");
-document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</body></html>"); 
-}
-
-}
 function pdf5(input, root){
 var searchq=window.location.search+""
 if(searchq=="?quick"){throw("Downloading File Instead");}
@@ -191,55 +73,6 @@ catch (err)
 }
 
 }
-
-
-
-function pdf(input, root){
-var searchq=window.location.search+""
-if(searchq=="?quick"){throw("Downloading File Instead");}
-var titlex=input.innerHTML;
-var idx=input.id;
-var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
-var tix=document.title;
-
-var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE9 - Attempt to Download File directly")
-return true;
-
-
-}}
-try
-{
-window.location="/s/?view="+root+"&n="+titlex+""
-}
-catch (err)
-{
-var myurl = document.location;
-document.write("<html><head>");
-document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
-document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
-document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
-document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script><style>");
-document.write("<\/head>");
-document.write("<body>");
-document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
-document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex);
-document.write("<span style=\"float:right;\">");
-document.write("<!--<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;-->");
-document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</body></html>"); 
-}
-
-}
-
-
-
 
 function openLink(a)
 {
@@ -320,34 +153,9 @@ catch (err){}
 }
 }
 
-function getfile (a)
-{
-var link=a.innerHTML
-window.location=link;
-
-}
-function getfile2 (a)
-{
-var link=a.value
-window.location=link;
-
-}
-function getlinkx(a)
-{
-  
-   var version = document.documentMode || 9
-   var queryz=a.replace("</b>", "").replace("<b>","")
-   var ida=-(1-queryz);
-   var idb = ida+12;
-if (version<9){if (idb > 7){idb=idb+7}} 
-var anchors = document.links;
-var thislinkx= anchors[idb].href;
-window.location=thislinkx
-}
-
 function configure()
 {
-$( "&nbsp;&nbsp;<br><p>For Year 10 and Year 11 students please proceed with caution, as the content is currently only for the old syllabus!</p>" ).prependTo("body");
+$( "&nbsp;&nbsp;<br><p><b>Note:</b> For Year 10 and Year 11 students please proceed with caution, as the content is currently only for the old syllabus!</p>" ).appendTo("#contentall");
 var q=window.location.search+"=z&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
