@@ -1,0 +1,65 @@
+
+<html><head>
+<title>404 Not Found</title>
+<meta charset="utf-8">
+<link href="/s/styles/style-tree.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="/s/images/icon_def.png">
+<title id="title">thsconline</title>
+</head>
+
+<div id="sites-chrome-everything">
+<div id="sites-chrome-page-wrapper" style="direction: ltr;">
+<div id="sites-chrome-page-wrapper-inside">
+<div id="sites-chrome-header-wrapper" xmlns="http://www.w3.org/1999/xhtml">
+<table class="sites-layout-hbox" id="sites-chrome-header" cellspacing="0">
+<tbody><tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td><div class="sites-header-cell-buffer-wrapper">
+<h2>thsconline</h2></div></td>
+
+
+
+</tr></div></div>
+</td>
+</tr>
+</tbody></table> 
+</div>
+<div id="sites-chrome-main-wrapper">
+<div class="sites-canvas-main" id="sites-canvas-main">
+<div id="sites-canvas-main-content" style="width:100%">
+<table class="sites-layout-name-one-column sites-layout-hbox" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr>
+<td class="sites-layout-tile sites-tile-name-content-1" id="CONTENT LEFT">
+<div dir="ltr" id="contentall" style="height:100%;width:inherit;">
+<table id="tablex"><tbody id="tbody">
+<tr><td>&nbsp;</td></tr>
+<tr><td><img src="/s/images/image_404_robot.png"><br><br>
+<i>Folder Not Accessible. Please email thsconline@gmail.com for access</i></td></tr>
+<tr id="tbf"><td><h5>Please choose a folder:</h5></td></tr>
+<!-- Files -->
+<tr id="tca"><td><img src="/s/images/icon_home.png">&nbsp;&nbsp;<a href="/s/">THSC Homepage</a></td></tr>
+<tr id="tcb"><td><img src="/s/images/icon_folder.png">&nbsp;&nbsp;<a href="/s/yr10/">Year 10</a></td></tr>
+<tr id="tcc"><td><img src="/s/images/icon_folder.png">&nbsp;&nbsp;<a href="/s/yr11/">Year 11</a></td></tr>
+<tr id="tcd"><td><img src="/s/images/icon_folder.png">&nbsp;&nbsp;<a href="/s/yr12/">Year 12</a></td></tr>
+</table><br><br><br><br><br><br><br><br>
+</td>
+</tr></tbody></table>
+<script>
+if (self != top)
+{
+document.getElementById("tca").innerHTML="nbsp;";
+document.getElementById("tcb").innerHTML="nbsp;";
+document.getElementById("tcc").innerHTML="nbsp;";
+document.getElementById("tcd").innerHTML="nbsp;";
+document.getElementById("tbf").innerHTML="nbsp;";
+}
+</script>
+</div>
+</div> 
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container" style="display:inherit;"><br />
+<div class="sites-adminfooter" role="navigation" xmlns="http://www.w3.org/1999/xhtml"><p><b>Site Version 8.0</b></p>
+<p><span class="sites-system-link">Hosted on <b class="powered-by">Github</b> HTML Template created from <b class="powered-by">Google Sites</b></span></p></div>
+</div>
+</div>
+</body></html>
