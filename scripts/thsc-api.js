@@ -155,7 +155,7 @@ catch (err){}
 
 function configure()
 {
-$( "&nbsp;&nbsp;<br><b>To upload files for future students: <a href=\"http://www.mediafire.com/filedrop/filedrop_hosted.php?drop=74ae2998b2af16eb5a4cae5f9c92b3005d7b3d88fa5d6348e4d1de43a593933b\">UPLOAD HERE</a><br><br>&nbsp;&nbsp;<br><p><b>Note:</b> For Year 10 and Year 11 students please proceed with caution, as the content is currently only for the old syllabus!</p>" ).appendTo("#contentall");
+$( "&nbsp;&nbsp;<br><b>To upload files for future students: <a href=\"http://www.mediafire.com/filedrop/filedrop_hosted.php?drop=74ae2998b2af16eb5a4cae5f9c92b3005d7b3d88fa5d6348e4d1de43a593933b\" class=\"upload_link\">Upload Here</a></b><br><br><b>Note:</b> For Year 10 and Year 11 students please proceed with caution, as the content is currently only for the old syllabus!" ).appendTo("#contentall");
 var q=window.location.search+"=z&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
