@@ -61,11 +61,14 @@ if(idx != "0000")
 {
 var idstring = "id="+idx+"&";
 searchq = searchq.replace(idstring, "");
-window.location="/s/index.html"+searchq
+	url=""/s/index.html"+searchq"
+window.location.replace(url);
 }
-setTimeout(function(){load()}, 2)
+	else
+	{
+setTimeout(function(){load()}, 1)
 }
-
+}
 function load()
 {
 var searchq=window.location.search+""
