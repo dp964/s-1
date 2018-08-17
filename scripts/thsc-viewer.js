@@ -1131,7 +1131,7 @@ document.write("<span id=\"logged-in-user\"></span><a class=\"border\" href=\"ht
 }
 else
 {
-document.write("<!--&nbsp;&nbsp;--><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("<!--&nbsp;&nbsp;--><span id=\"logged-in-user\"></span><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 }
 
 
