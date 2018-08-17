@@ -1097,7 +1097,7 @@ else
 {
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 }
-document.write("<span style=\"float:right;\"> ");
+document.write("<span style=\"float:right;\">&nbsp;&nbsp;");
 if (switchx=="sdf")
 {
 }
