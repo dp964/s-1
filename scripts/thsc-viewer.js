@@ -3,14 +3,16 @@
 function writefile(myobject)
 {
 var idxq=myobject.fileref;
+var userloginx=myobject.user;	
 var b="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
 var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
+document.getElementById("logged-in-user").innerHTML="Logged in as: " + userloginx
 var titlex=getParameterByName('n');
 fbox="<div class=\"poverlay-content\" style=\"background: rgb(200,200,248); background: rgba(200,200,248, 0.97) !important;\">"
-fbox="&nbsp;<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"hidefbox()\" href=\"#\">Close</a><br></div>"
+fbox="&nbsp;<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"hidefbox()\" href=\"#\">Close</a><br><br><br>Lo</div>"
 
 
 
@@ -1117,7 +1119,7 @@ if (switchx=="sdf")
 	linkx="/s/?view="+viewnox+"&id="+idx+"&n="+titlex+""
 	/*	document.write("<a class=\"border\" href=\""+linkx+"\"  style=\"background-color:#222222 !important;\">Expand<\/a>&nbsp;&nbsp;")*/
 	}
-document.write("<a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill  border\" href=\"\/s\/?close\">Close &#215;<\/a></span></span></span><br>");
+document.write("<span id=\"logged-in-user\"></span><a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill  border\" href=\"\/s\/?close\">Close &#215;<\/a></span></span></span><br>");
 }
 else
 {
@@ -1129,7 +1131,7 @@ var viewlk="https:\/\/drive.google.com\/file\/d\/1QLU8Rfy7Lk_vO0HiRSQSVSBM3oAgCn
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+viewlk+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("<script type=\"application/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyJrYMxCo4fdrF3QHfFulwNC8gNBINlNA1ScArJ0A8QHqDZnEk\/exec?field="+titlex+"&base="+viewnox+"&prefix=writefile\"></script></body></html>"); 
 
-document.write("<script type=\"application/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyJrYMxCo4fdrF3QHfFulwNC8gNBINlNA1ScArJ0A8QHqDZnEk\/exec?field="+titlex+"&base="+viewnox+"&prefix=writefile\"></script></body></html>"); 
+
 break;
 
 case "?study":
