@@ -17,8 +17,16 @@ fbox="&nbsp;<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downl
 
 
 
-setTimeout(function(){document.getElementById("logged-in-user").innerHTML="Logged in as: " + userloginx; document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"showfbox()\" href=\"#ui-blank\">Info/Options</a>&nbsp;&nbsp;"}, 2)
+setTimeout(function(){inserthtml()}, 2)
     }
+
+function inserthtml()
+{
+	
+	document.getElementById("logged-in-user").innerHTML="Logged in as: " + userloginx;
+	document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"showfbox()\" href=\"#ui-blank\">Info/Options</a>&nbsp;&nbsp;"
+}
+
 function loadviewer()
 {
 	
