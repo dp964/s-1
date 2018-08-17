@@ -9,7 +9,7 @@ var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
-document.getElementById("logged-in-user").innerHTML="Logged in as: " + userloginx
+
 var titlex=getParameterByName('n');
 fbox="<div class=\"poverlay-content\" style=\"background: rgb(200,200,248); background: rgba(200,200,248, 0.97) !important;\">"
 fbox="&nbsp;<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"hidefbox()\" href=\"#\">Close</a><br><br><br>Lo</div>"
@@ -17,7 +17,7 @@ fbox="&nbsp;<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downl
 
 
 
-setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"showfbox()\" href=\"#ui-blank\">Info/Options</a>&nbsp;&nbsp;"}, 2)
+setTimeout(function(){document.getElementById("logged-in-user").innerHTML="Logged in as: " + userloginx; document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"showfbox()\" href=\"#ui-blank\">Info/Options</a>&nbsp;&nbsp;"}, 2)
     }
 function loadviewer()
 {
