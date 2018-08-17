@@ -66,10 +66,10 @@ window.location.replace(url);
 }
 	else
 	{
-setTimeout(function(){load()}, 1)
+setTimeout(function(){loady()}, 1)
 }
 }
-function load()
+function loady()
 {
 var searchq=window.location.search+""
 var q=window.location.search+"=z&end" || "?noquery"
