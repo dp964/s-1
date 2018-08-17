@@ -1097,7 +1097,7 @@ else
 {
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 }
-document.write("<span style=\"float:right;\" id=\"logged-in-user\"></span><span style=\"float:right;\"> ");
+document.write("<span style=\"float:right;\"> ");
 if (switchx=="sdf")
 {
 }
@@ -1129,7 +1129,7 @@ document.write("<a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">
 }
 else
 {
-document.write("<!--&nbsp;&nbsp;--><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("<!--&nbsp;&nbsp;--><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span><span style=\"float:right;\" id=\"logged-in-user\"></span></span></span><br>");
 }
 
 
