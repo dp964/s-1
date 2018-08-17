@@ -1097,7 +1097,7 @@ else
 {
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 }
-document.write("<span style=\"float:right;\">");
+document.write("<span style=\"float:right;\"><span id=\"logged-in-user\"></span>");
 if (switchx=="sdf")
 {
 }
@@ -1125,11 +1125,11 @@ if (switchx=="sdf")
 	linkx="/s/?view="+viewnox+"&id="+idx+"&n="+titlex+""
 	/*	document.write("<a class=\"border\" href=\""+linkx+"\"  style=\"background-color:#222222 !important;\">Expand<\/a>&nbsp;&nbsp;")*/
 	}
-document.write("<span id=\"logged-in-user\"></span><a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill  border\" href=\"\/s\/?close\">Close &#215;<\/a></span></span></span><br>");
+document.write("<a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill  border\" href=\"\/s\/?close\">Close &#215;<\/a></span></span></span><br>");
 }
 else
 {
-document.write("<!--&nbsp;&nbsp;--><span id=\"logged-in-user\"></span><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("<!--&nbsp;&nbsp;--></span><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
 }
 
 
