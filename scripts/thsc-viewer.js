@@ -3,20 +3,36 @@
 function writefile(myobject)
 {
 var idxq=myobject.fileref;
+var userloginx=myobject.user;	
 var b="https:\/\/drive.google.com\/file\/d\/"+myobject.fileref+"\/preview";
 var downloadlka="https:\/\/drive.google.com\/uc?export=download&id="+idxq;
 
 setTimeout(function(){document.getElementById("mediaplayer").src=b; 
 document.getElementById("mediaplayer").id="medialoaded"}, 1)
+
 var titlex=getParameterByName('n');
 fbox="<div class=\"poverlay-content\" style=\"background: rgb(200,200,248); background: rgba(200,200,248, 0.97) !important;\">"
-fbox="&nbsp;<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"hidefbox()\" href=\"#\">Close</a><br></div>"
+fbox="&nbsp;<h4>"+titlex+"</h4>Download File: <a class=\"border\" href=\""+downloadlka+"\" target=\"_blank\">Download File<\/a><br><br> Close Info/Options Box: <a class=\"border\" onclick=\"hidefbox()\" href=\"#\">Close</a><br><br><br>Logged in as: " + userloginx+"</div>"
 
 
 
 
-setTimeout(function(){document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"showfbox()\" href=\"#ui-blank\">Info/Options</a>&nbsp;&nbsp;"}, 2)
+setTimeout(function(){document.getElementById("logged-in-user").innerHTML="Logged in as: " + userloginx;
+	document.getElementById("figurebox").innerHTML=fbox; document.getElementById("downloadlk").innerHTML="<a class=\"border\" onclick=\"showfbox()\" href=\"#ui-blank\">Info/Options</a>&nbsp;&nbsp;"}, 2)
     }
+
+
+	
+	
+
+function loadviewer()
+{
+	
+	
+	
+}
+
+
 function showfbox()
 {
 if (document.getElementById("figurebox").style.width == "24px")
@@ -44,7 +60,26 @@ function hidefbox()
 function loadx()
 {
 var searchq=window.location.search+""
+var q=window.location.search+"=z&end" || "?noquery"
+var qt=q.split("&")[0]
+var queryx=qt.split("=")[0];
 
+var idx=getParameterByName('id', "0000")
+if(idx != "0000")
+{
+var idstring = "id="+idx+"&";
+searchq = searchq.replace(idstring, "");
+	url="/s/index.html"+searchq
+window.location.replace(url);
+}
+	else
+	{
+setTimeout(function(){loadz()}, 1)
+}
+}
+function loadz()
+{
+var searchq=window.location.search+""
 var q=window.location.search+"=z&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
@@ -1062,7 +1097,7 @@ else
 {
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 }
-document.write("<span style=\"float:right;\">");
+document.write("<span style=\"float:right;\">&nbsp;&nbsp;");
 if (switchx=="sdf")
 {
 }
@@ -1090,17 +1125,19 @@ if (switchx=="sdf")
 	linkx="/s/?view="+viewnox+"&id="+idx+"&n="+titlex+""
 	/*	document.write("<a class=\"border\" href=\""+linkx+"\"  style=\"background-color:#222222 !important;\">Expand<\/a>&nbsp;&nbsp;")*/
 	}
-document.write("<a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill  border\" href=\"\/s\/?close\">Close &#215;<\/a></span></span></span><br>");
+document.write("<a class=\"border\" href=\"https:\/\/thsconline.github.io\/s/\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill border\" href=\"\/s\/?close\">Close &#215;<\/a></span></span></span><br>");
 }
 else
 {
-document.write("<!--&nbsp;&nbsp;--><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("<!--&nbsp;&nbsp;--><a class=\"border\" href=\""+tags+"\">Close &#215;<\/a>&nbsp;&nbsp;</span><span style=\"float:right;\" id=\"logged-in-user\"></span></span></span><br>");
 }
 
 
 var viewlk="https:\/\/drive.google.com\/file\/d\/1QLU8Rfy7Lk_vO0HiRSQSVSBM3oAgCncq\/preview"; // temp line
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\""+viewlk+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("<script type=\"application/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyJrYMxCo4fdrF3QHfFulwNC8gNBINlNA1ScArJ0A8QHqDZnEk\/exec?field="+titlex+"&base="+viewnox+"&prefix=writefile\"></script></body></html>"); 
+
+
 break;
 
 case "?study":
