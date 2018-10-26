@@ -169,7 +169,7 @@ idx=idx.replace(/P2 (Std.)/g, "_P2");
 idx=idx.replace(/P2/g, "_P2");
 
 idx=idx.replace(/PracticeExam/g, "_PracticeExam");
-idx=idx.replace(/'/g, "");
+idx=idx.replace(/'s/g, "_");
 
 switch(viewnox)
 {
