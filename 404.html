@@ -48,7 +48,7 @@
 <table class="sites-layout-name-one-column sites-layout-hbox" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr>
 <td class="sites-layout-tile sites-tile-name-content-1" id="CONTENT LEFT">
 <div dir="ltr" id="contentall" style="height:100%;width:inherit;">
-<h3>thsconline website is unselectedly being updated</h3>
+<h3>thsconline website is being updated</h3>
 It should be online Mar 3 2019<br><br>
 
 
@@ -56,39 +56,24 @@ It should be online Mar 3 2019<br><br>
 <br><br>
 You will need to construct the link directly to the file.<br><br>
 
-Enter 4 digit THSC subject code: <input id="viewno" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br><br>
-Enter school name: <input id="school" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br><br>
-Enter year of paper: <input id="year" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br><br>
-Solutions (included): <input id="sol" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br><br>
-
+Enter 4 digit THSC subject code: <input id="viewno" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br>
+<small>See below to find the correct number for your subject / paper type</small><br><br>
+Enter name (do not include subject): <input id="name" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br>
+<small>e.g. Sydney Tech 2011 w. sol or Barker 2006</small><br><br>
+<a target="blank" id="launch" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://thsconline.github.io/s/">Launch Viewer</a><br><br>
 <a target="blank" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://script.google.com/macros/s/AKfycbwcYoB2DVclq_n8qURcSuRa_FZwKRBqyqT4B9EMD4C9LSRgB6gb/exec?serve=sitemap">Read Only Tree</a>
-<a target="blank" id="launch" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://thsconline.github.io/s/">Launch Viewer</a>
 <script>
 function urlupdate()
 {
 
 
 var viewno=document.getElementById("viewno").value;
-var school=document.getElementById("school").value;
-var year=document.getElementById("year").value;
-var sol=document.getElementById("sol").value;
-
-
-var name = school + " " + year
-24
+var name=document.getElementById("name").value;
 
 var qlink = document.getElementById("launch").href.split("/s")[0] 
 
 
-	if (sol.toUpperCase() == "YES")
-	{
-	var name = school + " " + year + " w. sol"
-		document.getElementById("launch").href=qlink+"/s/?view="+viewno+"&n="+name;
-	}
-	else
-	{
-	var name = school + " " + year
-		document.getElementById("launch").href=qlink+"/s/?view="+viewno+"&n="+name;
+		document.getElementById("launch").href=qlink+"/s/v.html?view="+viewno+"&n="+name;
 	}
 }
 </script>
