@@ -39,7 +39,7 @@ var qserve=document.getElementById("serve").value;
 
 var qlink = document.getElementById("launch").href.split("/exec")[0] 
 
-var qx = q.charAt(0);
+var qx = qserve.charAt(0);
 	if (qx == "#")
 	{
 		document.getElementById("launch").href=qlink+"/exec?serve="+qserve.substr(1);
