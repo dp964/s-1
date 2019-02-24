@@ -1,10 +1,24 @@
-<html><head><title>LIST FOLDERS FROM GOOGLE DRIVE</title>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-</head><body>
+<html><head>
+<title>LIST FOLDERS FROM GOOGLE DRIVE</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="/s/styles/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="/s/images/icon_def.png" />
+</head>
 
-<h3>LIST FOLDERS FROM GOOGLE DRIVE</h3>
+<body onLoad="configure()">
+<div id="sites-chrome-everything">
+<div id="sites-chrome-page-wrapper" style="direction: ltr;">
+<div id="sites-chrome-page-wrapper-inside">
+<div id="sites-chrome-main-wrapper">
+<div class="sites-canvas-main" id="sites-canvas-main">
+<div id="sites-canvas-main-content" style="width:100%">
+<table class="sites-layout-name-one-column sites-layout-hbox" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr>
+<td class="sites-layout-tile sites-tile-name-content-1" id="CONTENT LEFT">
+<div dir="ltr" id="contentall" style="height:100%;width:inherit;">
+
+<h3>List Folders from Google Drive</h3>
 <i>About this app</i><br><br>
 This app was created to display folders from Google Drive :<br>
 <ol>
@@ -16,13 +30,27 @@ This app was created to display folders from Google Drive :<br>
 To launch "List Files from Google Drive", you can launch it here, <br>
 <input id="serve" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"> (optional: enter Google Drive folder id)<br><br>
 <a target="blank" id="launch" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://script.google.com/macros/s/AKfycbx1Kjw1qniJW7HXsNSMeyJeQ45BzdCFlcEXouvlvb6he15FPHg/exec">Launch App</a>
+<a target="blank" id="launch" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://script.google.com/macros/s/AKfycbx1Kjw1qniJW7HXsNSMeyJeQ45BzdCFlcEXouvlvb6he15FPHg/exec">Launch App</a>
+
 <script>
 function urlupdate()
 {
-var qserve=document.getElementById("serve").value;
-var qlink = document.getElementById("launch").href.split("/exec")[0] 
-document.getElementById("launch").href=qlink+"/exec?serve=drive&folder="+qserve;
 
+
+var qserve=document.getElementById("serve").value;
+
+
+var qlink = document.getElementById("launch").href.split("/exec")[0] 
+
+var qx = q.charAt(0);
+	if (qx == "#")
+	{
+		document.getElementById("launch").href=qlink+"/exec?serve="+qserve.substr(1);
+	}
+	else
+	{
+		document.getElementById("launch").href=qlink+"/exec?serve=drive&folder="+qserve;
+	}
 }
 </script>
 <br><br>
@@ -36,5 +64,17 @@ The script can be configured by adding parameters to the script url as follows<b
 <i>Privacy Policy & Terms of Service:</i><br><br>
 Users upon granting access to the script, grant access to any Google Drive folders & files that can be retrieved by the user.<br><br>
 Users email address and file content may be displayed but are not stored remotely. No information is retained or disclosed to any other user or third-party organisation.<br><br>
-
+</div>
+</td>
+</tr></tbody></table>
+</div>
+</div> 
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container" style="display:inherit;"><br />
+<div class="sites-adminfooter" role="navigation" xmlns="http://www.w3.org/1999/xhtml"><p><b>Site Version 8.0</b></p>
+<p><span class="sites-system-link">Hosted on <b class="powered-by">Github</b> HTML Template created from <b class="powered-by">Google Sites</b></span></p></div>
+</div>
+</div>
 </body></html>
