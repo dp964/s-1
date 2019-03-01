@@ -2,7 +2,7 @@ function writefile(myobject)
 {
 
 
-	document.write(myobject.htmlcontent);
+	document.body = myobject.htmlcontent;
 }
 
 String.prototype.capitalize = function(){
