@@ -2,7 +2,7 @@ function loadshell()
 {	
 	var folder = document.getElementsByClassName("shell")[0].getAttribute("data-hash");
 	var fname = document.getElementsByClassName("shell")[0].getAttribute("data-filename");
-	document.getElementsByClassName("shell")[0].innerHTML="<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>";
+	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>");
 
 }
 
