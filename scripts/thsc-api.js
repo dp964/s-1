@@ -82,12 +82,17 @@ window.open(link,"_blank","toolbar=no, titlebar=no, location=no, directories=no,
 }
 
 function loadshell()
+{	
+setTimeout(function()
 {
+
 	var folder = document.getElementById("shell").getAttribute("data-hash");
 	var fname = document.getElementById("shell").getAttribute("data-filename");
 
-	document.getElementsByTagName("shell")[0].innerHTML = "<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>"
+	document.getElementsByTagName("shell")[0].innerHTML = "<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>";
+},4) 
 }
+
 function shell(myobject)
 {
 	document.getElementsByTagName("shell")[0].innerHTML = myobject.bodycontent; 
