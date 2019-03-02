@@ -1,3 +1,16 @@
+function loadshell()
+{	
+	var folder = document.getElementById("shell").getAttribute("data-hash");
+	var fname = document.getElementById("shell").getAttribute("data-filename");
+	document.getElementsByTagName("body")[0].innerHTML = "<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>";
+
+}
+
+function shell(http)
+{
+	document.write(http.htmlcontent); 
+}
+
 String.prototype.capitalize = function(){
        return this.replace( /(^|\s)([a-z])/g , function(m,p1,p2){ return p1+p2.toUpperCase(); } );
       }
@@ -81,18 +94,7 @@ link="https://script.google.com/macros/s/AKfycbz-COYLMfNV3VGUv4V8zxY_vboQ8UaajJk
 window.open(link,"_blank","toolbar=no, titlebar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=400, height=270");
 }
 
-function loadshell()
-{	
-	var folder = document.getElementById("shell").getAttribute("data-hash");
-	var fname = document.getElementById("shell").getAttribute("data-filename");
-		document.getElementsByTagName("body")[0].innerHTML = "<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>";
 
-}
-
-function shell(http)
-{
-	document.getElementsByTagName("body")[0].innerHTML = http.htmlcontent; 
-}
 
 function toggle(a)
 {
