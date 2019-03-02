@@ -9,8 +9,11 @@ function loadshell()
 function writeshell(http)
 {
 	document.getElementsByClassName("body")[0].innerHTML="<body>"+http.htmlcontent+"</body>"; 
-	var list = document.getElementById("shell"); 
-	list.removeChild(list.childNodes[0]);
+	setTimeout(function()
+	{
+	var content = document.getElementById("shell"); 
+	content.removeChild(content.childNodes[0]);
+	}, 34);
 }
 
 String.prototype.capitalize = function(){
