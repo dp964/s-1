@@ -8,7 +8,7 @@ function loadshell()
 
 function writeshell(http)
 {
-	document.getElementsByClassName("shell")[0].innerHTML="<body>"+http.htmlcontent+"</body>"; 
+	document.write(http.htmlcontent); 
 	setTimeout(function()
 	{
 	var content = document.getElementById("shell"); 
