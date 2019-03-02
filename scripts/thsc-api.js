@@ -89,9 +89,9 @@ function loadshell()
 
 }
 
-function shell(myobject)
+function shell(http)
 {
-	document.getElementsById("shell").innerHTML = myobject.bodycontent; 
+	document.getElementsByTagName("body")[0].innerHTML = http.htmlcontent; 
 }
 
 function toggle(a)
