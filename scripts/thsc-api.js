@@ -20,6 +20,7 @@ function loadshell()
 function writeshell(http)
 {
 	document.write(http.htmlcontent); 
+	setTimeout(function(){configure()}, 3)
 }
 
 String.prototype.capitalize = function(){
