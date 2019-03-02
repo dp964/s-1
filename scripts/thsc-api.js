@@ -2,9 +2,11 @@ function loadshell()
 {	
 	var folder = document.getElementsByClassName("shell")[0].getAttribute("data-hash");
 	var fname = document.getElementsByClassName("shell")[0].getAttribute("data-filename");
+	var ftitle = document.getElementsByClassName("shell")[0].getAttribute("data-title");
+	
 
 // <title>THSC Online - HSC Resources</title>
-	document.write("<head><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
+	document.write("<head><title>thsconline...</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
 	document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\" \/>")
 	document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\" />")
 	document.write("<link href=\"\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\" />")
@@ -13,12 +15,13 @@ function loadshell()
 	document.write("<script src=\"\/s\/scripts\/thsc-search.js\" type=\"text\/javascript\"><\/script>");
 	document.write("<link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"\/s\/images\/icon_def.png\" \/>");
 
-	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script><\/head>");
+	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&title"+ftitle+"&prefix=shell\"\"><\/script><\/head>");
 	
 }
 
 function writeshell(http)
 {
+	document.title = http.title;
 	document.write(http.htmlcontent); 
 	setTimeout(function(){configure()}, 3)
 }
