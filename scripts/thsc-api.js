@@ -80,45 +80,19 @@ function openLink(a)
 link="https://script.google.com/macros/s/AKfycbz-COYLMfNV3VGUv4V8zxY_vboQ8UaajJkMynva2lFX-yCla48/exec?"+a+"#sites-chrome-everything-caja-guest-0___"
 window.open(link,"_blank","toolbar=no, titlebar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=400, height=270");
 }
-function getdir()
+
+function loadshell()
 {
-var f = window.location+""
-var g = f.split("/")
-var h= "THSC Home // "
-for (i=5; i<g.length;i++)
+	var folder = document.getElementById("shell").getAttribute("data-hash");
+	var fname = document.getElementById("shell").getAttribute("data-filename");
+
+	document.getElementsByTagName("shell")[0].innerHTML = "<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>"
+}
+function shell(myobject)
 {
-if (g[i]=="" || g[i]=="webdir.html"){}
-else{
-h += unescape(g[i])+" // "
+	document.getElementsByTagName("shell")[0].innerHTML = myobject.bodycontent; 
 }
-}
-h+="<br>"
-document.getElementById("heading").innerHTML=h;
-k=g[g.length-2]
-document.title="THSC Online - Directory of " + unescape(k);
-}
-function getnode()
-{
-var g=window.location+"";
-g=g.split("\/");
-g=g[g.length-3] + " - "+ g[g.length-2];
-g=unescape(g)
-g=g.capitalize(g)
-g=g.replace("2U", "Maths");
-g=g.replace("3U", "Maths Ext 1");
-g=g.replace("4U", "Maths Ext 2");
-document.title="THSC Online - " + g || "THSC Online";
-}
-function spider(a)
-{
-var link=a.innerHTML+"/";
-window.location=link;
-}
-function spiderx(a,ext)
-{
-var link=a.innerHTML+"."+ext;
-window.location=link;
-}
+
 function toggle(a)
 {
 x=a.innerHTML.replace("&", "$")
