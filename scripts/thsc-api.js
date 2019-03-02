@@ -2,18 +2,13 @@ function loadshell()
 {	
 	var folder = document.getElementsByClassName("shell")[0].getAttribute("data-hash");
 	var fname = document.getElementsByClassName("shell")[0].getAttribute("data-filename");
-	document.getElementsByClassName("shell")[0].innerHTML="<div id=\"shell\"><script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script></div>";
+	document.getElementsByClassName("shell")[0].innerHTML="<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script>";
 
 }
 
 function writeshell(http)
 {
 	document.write(http.htmlcontent); 
-	setTimeout(function()
-	{
-	var content = document.getElementById("shell"); 
-	content.removeChild(content.childNodes[0]);
-	}, 34);
 }
 
 String.prototype.capitalize = function(){
