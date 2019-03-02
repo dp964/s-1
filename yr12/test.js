@@ -1,8 +1,13 @@
 function loadshell()
 {
-	document.getElementsByTagName("body")[0].innerHTML = "<div id=\"writershell\"><script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec\"><\/script>"
+	var folder = document.getElementById("shell").getAttribute("data-hash");
+	var fname = document.getElementById("shell").getAttribute("data-filename");
+	
+	
+	
+	document.getElementsByTagName("shell")[0].innerHTML = "<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec\"><\/script>"
 }
 function shell(myobject)
 {
-	document.getElementsByTagName("body")[0].innerHTML = myobject.bodycontent; 
+	document.getElementsByTagName("shell")[0].innerHTML = myobject.bodycontent; 
 }
