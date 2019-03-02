@@ -8,7 +8,7 @@ function loadshell()
 
 function writeshell(http)
 {
-	document.write("<body>"+http.htmlcontent+"</body>"); 
+	document.getElementsByClassName("body")[0].innerHTML="<body>"+http.htmlcontent+"</body>"; 
 }
 
 String.prototype.capitalize = function(){
