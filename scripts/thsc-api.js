@@ -2,7 +2,6 @@ function loadshell()
 {	
 	var folder = document.getElementsByClassName("shell")[0].getAttribute("data-hash");
 	var fname = document.getElementsByClassName("shell")[0].getAttribute("data-filename");
-	var ftitle = document.getElementsByClassName("shell")[0].getAttribute("data-title");
 	
 
 // <title>THSC Online - HSC Resources</title>
@@ -15,7 +14,7 @@ function loadshell()
 	document.write("<script src=\"\/s\/scripts\/thsc-search.js\" type=\"text\/javascript\"><\/script>");
 	document.write("<link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"\/s\/images\/icon_def.png\" \/>");
 
-	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&title="+ftitle+"&prefix=shell\"\"><\/script><\/head>");
+	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbyUUReOeIpiiIJWWMaKORJYURDTso_cm5RNuNu0W0oVKBPfNtdk\/exec?serve="+folder+"&filename="+fname+"&prefix=shell\"\"><\/script><\/head>");
 	
 }
 
