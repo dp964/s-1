@@ -168,11 +168,9 @@ function loadx()
 	var tix="THSC Online";
 	var tags="/s/yr12/#"+idx;
 	break;
-	case "1070":
-	var tix="HSC Agriculture";
-	var tags="/s/yr12/Agriculture/hscpapers.html#"+idx;
-	var forumenabled="forum=1";
-	var forumlk="234"
+	case "1034":
+	var tix="THSC Online";
+	var tags="/s/?landing";
 	break;
 	case "1070":
 	var tix="HSC Agriculture";
