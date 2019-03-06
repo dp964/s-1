@@ -19,24 +19,13 @@
 </tr>
 <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
 <td id="sites-chrome-header-horizontal-nav-container" role="navigation" colspan="2">
-<div class="sites-header-nav"><!--[if lt IE 9]><div style="display:none;"> <![endif]--> <ul class="sites-header-nav-container-boxes">
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes">
 <li class="unselected"><a class="sites-navigation-link unselected" href="/s/">THSC Home</a></li>
 <li class="unselected"><a class="sites-navigation-link unselected" href="/s/yr10/">Year 10</a></li>
 <li class="unselected"><a class="sites-navigation-link unselected" href="/s/yr11/">Year 11 - Preliminary</a></li>
 <li class="unselected"><a class="sites-navigation-link unselected" href="/s/yr12/">Year 12 - HSC</a></li>
 <li class="unselected"><a class="sites-navigation-link unselected" href="/s/upload/">Upload Files</a></li>
-</ul><!--[if lt IE 9]></div>
-<style>.sites-header-nav {border:none !important;} </style>
-<div style="padding-left:15px;" class="folder-path-container goog-container" id="navie">
-<span style="float:left;" class="folder-path-folder folder-unselected-element"><a class="nofill" href="/s/">THSC Home</a></span>
-<span style="float:left;" class="separate"></span>
-<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="/s/yr10/">Year 10</a></span>
-<span style="float:left;" class="separate"></span>
-<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="/s/yr11/">Year 11 - Preliminary</a></span>
-<span style="float:left;" class="separate"></span>
-<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="/s/yr12/">Year 12 - HSC</a></span>
-</div><br /><br />
-<![endif]-->
+</ul>
 </div>
 </td>
 </tr>
@@ -50,97 +39,8 @@
 <div dir="ltr" id="contentall" style="height:100%;width:inherit;">
 <h3>thsconline website is being updated</h3>
 It should be online Mar 3 2019<br /><br />
-
-
 <b>Temporary Work Around Access</b>
-<br /><br />
-You will need to construct the link directly to the file.<br /><br />
-
-Enter 4 digit THSC subject code: <input id="viewno" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br />
-<small>See below to find the correct number for your subject / paper type</small><br /><br />
-Enter name (do not include subject): <input id="name" onmouseleave="urlupdate()" onmouseout="urlupdate()" onclick="urlupdate()"><br />
-<small>e.g. Sydney Tech 2011 w. sol or Barker 2006</small><br /><br />
-<a target="blank" id="launch" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://thsconline.github.io/s/">Launch Viewer</a><br /><br />
-<a target="blank" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://script.google.com/macros/s/AKfycbwcYoB2DVclq_n8qURcSuRa_FZwKRBqyqT4B9EMD4C9LSRgB6gb/exec?serve=sitemap">Read Only Tree</a>
-<script>
-function urlupdate()
-{
-
-
-var viewno=document.getElementById("viewno").value;
-var name=document.getElementById("name").value;
-
-var qlink = document.getElementById("launch").href.split("/s")[0] 
-
-
-		document.getElementById("launch").href=qlink+"/s/index.html?view="+viewno+"&n="+name;
-}
-</script>
-
-<h4>Constructing the 4 digit THSC code</h4>
-The first 3 digits corresponds to the subject and the last digit corresponds to the type of paper.<br /><br />
-
-<h5>Paper Types</h5>
-0 - HSC paper or general files<br />
-1 - 1st assessment task CT1 or PT1<br />
-2 - 2nd assessment task CT2 or PT2<br />
-3 - 3rd assessment task CT3<br />
-4 - 4th assessment task CT4<br />
-5 - competition papers<br />
-6 - half yearly exam<br />
-7 - reserved<br />
-8 - yearly exam or trial exams<br />
-
-
-<h5>Common Subject Codes</h5>
-101 - Reserved<br />
-107 - HSC Agriculture<br />
-117 - HSC Ancient History<br />
-136 - Prelim Biology<br />
-137 - HSC Biology<br />
-156 - Prelim Business Studies<br />
-157 - HSC Business Studies<br />
-181 - Prelim Chemistry<br />
-182 - HSC Chemistry<br />
-242 - HSC Earth & Environmental Science<br />
-246 - Prelim Economics<br />
-247 - HSC Economics<br />
-271 - HSC English (Paper 1)<br />
-272 - HSC English (Paper 2)<br />
-273 - HSC English Ext 1<br />
-363 - HSC History Extension<br />
-411 - Prelim IPT<br />
-412 - HSC IPT<br />
-420 - HSC Languages<br />
-460 - HSC Japanese<br />
-461 - HSC Japanese Beginners<br />
-462 - HSC Japanese Continuers<br />
-463 - HSC Japanese Extension<br />
-501 - Prelim Legal Studies<br />
-502 - HSC Legal Studies<br />
-509 - Year 9 Maths<br />
-510 - Year 10 Maths<br />
-520 - Year 11 Maths<br />
-521 - Year 11 General/Standard<br />
-522 - Year 11 Maths Advanced<br />
-523 - Year 11 Maths Ext 1<br />
-527 - Year 11 Maths (accelerated)<br />
-530 - Year 12 Maths<br />
-531 - Year 12 General/Standard<br />
-532 - Year 12 Maths Advanced<br />
-533 - Year 12 Maths Ext 1<br />
-534 - Year 12 Maths Ext 2<br />
-540 - Maths Competitions<br />
-551 - Prelim Modern History<br />
-552 - HSC Modern History<br />
-642 - HSC PDHPE<br />
-651 - Prelim Physics<br />
-652 - HSC Physics<br />
-747 - HSC Software<br />
-752 - HSC Senior Science<br />
-771 - HSC Studies of Religion 1<br />
-772 - HSC Studies of Religion 2<br />
-857 - HSC Visual Arts<br />
+<a target="blank" style="border-radius:5px; border: 1px solid blue; color:blue !important;text-decoration:none;" href="https://script.google.com/macros/s/AKfycbwcYoB2DVclq_n8qURcSuRa_FZwKRBqyqT4B9EMD4C9LSRgB6gb/exec?serve=sitemap">thsconline</a>
 </div>
 </td>
 </tr></tbody></table>
